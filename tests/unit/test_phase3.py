@@ -50,7 +50,7 @@ def generate_scene_image(scene_key: str, visual_prompt: str, tone: str, setting:
 class TestVideoAgentIntegration:
 
     def test_full_pipeline_two_scenes(self, tmp_path):
-        from narrative.cinematics.render_orchestrator import RenderCoordinator
+        from agents.video_agent.agent import RenderCoordinator
         p1_dir = tmp_path / 'phase1'
         p1_dir.mkdir()
         handoff = make_dummy_scene_handoff()
@@ -70,7 +70,7 @@ class TestVideoAgentIntegration:
 
     def test_missing_audio_still_produces_video(self, tmp_path):
         """Agent should produce a video even with no audio files."""
-        from narrative.cinematics.render_orchestrator import RenderCoordinator
+        from agents.video_agent.agent import RenderCoordinator
         p1_dir = tmp_path / 'phase1'
         p1_dir.mkdir()
         handoff = {'title': 'Silent Movie', 'scenes': [{'scene_id': 's001', 'visual_prompt': 'A quiet forest', 'tone': 'peaceful', 'setting': 'forest', 'duration_sec': 3.0}]}
@@ -86,7 +86,7 @@ class TestVideoAgentIntegration:
 class TestSubtitleTool:
 
     def test_generates_srt(self, tmp_path):
-        from toolkit.video.caption_writer import CaptionWriterTool
+        from mcp.tools.video_tools.subtitle_tool import CaptionWriterTool
         tool = CaptionWriterTool()
         manifest = make_dummy_timing_manifest()
         out = str(tmp_path / 'subs.srt')
@@ -98,7 +98,7 @@ class TestSubtitleTool:
         assert 'Narrator' in payload_text
 
     def test_empty_manifest_creates_file(self, tmp_path):
-        from toolkit.video.caption_writer import CaptionWriterTool
+        from mcp.tools.video_tools.subtitle_tool import CaptionWriterTool
         tool = CaptionWriterTool()
         out = str(tmp_path / 'empty.srt')
         outcome = tool.execute(timing_manifest=[], output_path=out)
@@ -106,7 +106,7 @@ class TestSubtitleTool:
         assert Path(out).exists()
 
     def test_ms_to_srt_time(self):
-        from toolkit.video.caption_writer import format_srt_timestamp
+        from mcp.tools.video_tools.subtitle_tool import format_srt_timestamp
         assert format_srt_timestamp(0) == '00:00:00,000'
         assert format_srt_timestamp(1000) == '00:00:01,000'
         assert format_srt_timestamp(65500) == '00:01:05,500'
@@ -116,7 +116,7 @@ class TestSubtitleTool:
 class TestImageGenTool:
 
     def test_generates_png(self, tmp_path):
-        from toolkit.vision.storyboard_frames import StoryboardTool
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
         tool = StoryboardTool()
         out = str(tmp_path / 'test_scene.png')
         outcome = tool.execute(scene_id='test_scene_001', visual_prompt='A futuristic city at night', tone='mysterious', setting='urban', output_path=out, use_ollama=False)
@@ -125,7 +125,7 @@ class TestImageGenTool:
         assert Path(out).stat().st_size > 0
 
     def test_different_moods_produce_files(self, tmp_path):
-        from toolkit.vision.storyboard_frames import StoryboardTool
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
         tool = StoryboardTool()
         for mood in ['happy', 'sad', 'mysterious', 'tense', 'peaceful']:
             out = str(tmp_path / f'{mood}.png')
@@ -134,7 +134,7 @@ class TestImageGenTool:
             assert Path(out).exists()
 
     def test_space_scene_with_stars(self, tmp_path):
-        from toolkit.vision.storyboard_frames import StoryboardTool
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
         tool = StoryboardTool()
         out = str(tmp_path / 'space_scene.png')
         outcome = tool.execute(scene_id='space_scene_001', visual_prompt='Astronaut floating in deep space among stars and galaxies', tone='mysterious', setting='outer space', output_path=out, use_ollama=False)
@@ -142,7 +142,7 @@ class TestImageGenTool:
         assert Path(out).exists()
 
     def test_city_scene(self, tmp_path):
-        from toolkit.vision.storyboard_frames import StoryboardTool
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
         tool = StoryboardTool()
         out = str(tmp_path / 'city_scene.png')
         outcome = tool.execute(scene_id='city_scene_001', visual_prompt='Busy city street at night with neon signs and tall skyscrapers', tone='exciting', setting='city', output_path=out, use_ollama=False)
@@ -152,8 +152,8 @@ class TestImageGenTool:
 class TestFFmpegTool:
 
     def test_ken_burns_zoom_in(self, tmp_path):
-        from toolkit.vision.storyboard_frames import generate_story_frames
-        from toolkit.video.ffmpeg_bridge import FfmpegBridgeTool
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
         img_path = str(tmp_path / 'test.png')
         generate_scene_image('test', 'A test scene', 'neutral', '', 1280, 720, img_path)
         tool = FfmpegBridgeTool()
@@ -163,8 +163,8 @@ class TestFFmpegTool:
         assert Path(out).exists()
 
     def test_ken_burns_static(self, tmp_path):
-        from toolkit.vision.storyboard_frames import generate_story_frames
-        from toolkit.video.ffmpeg_bridge import FfmpegBridgeTool
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
         img_path = str(tmp_path / 'test2.png')
         generate_scene_image('test2', 'Static scene', 'happy', '', 1280, 720, img_path)
         tool = FfmpegBridgeTool()
@@ -174,8 +174,8 @@ class TestFFmpegTool:
         assert Path(out).exists()
 
     def test_add_audio_to_video(self, tmp_path):
-        from toolkit.vision.storyboard_frames import generate_story_frames
-        from toolkit.video.ffmpeg_bridge import FfmpegBridgeTool
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
         img_path = str(tmp_path / 'img.png')
         generate_scene_image('s', 'scene', 'neutral', '', 1280, 720, img_path)
         raw_mp4 = str(tmp_path / 'raw.mp4')
@@ -188,16 +188,16 @@ class TestFFmpegTool:
         assert Path(out).exists()
 
     def test_invalid_operation_raises(self):
-        from toolkit.video.ffmpeg_bridge import FfmpegBridgeTool
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
         with pytest.raises(ValueError):
             FfmpegBridgeTool().execute(operation='does_not_exist')
 
 class TestCompositorTool:
 
     def test_compositor_two_clips(self, tmp_path):
-        from toolkit.vision.storyboard_frames import generate_story_frames
-        from toolkit.video.ffmpeg_bridge import FfmpegBridgeTool
-        from toolkit.video.scene_compositor import SceneComposerTool
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
+        from mcp.tools.video_tools.compositor_tool import SceneComposerTool
         clip_items = []
         for i in range(2):
             img = str(tmp_path / f'img_{i}.png')

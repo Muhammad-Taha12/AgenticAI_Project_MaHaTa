@@ -52,8 +52,8 @@ class FlowRunner:
         logger.info('Job %s: completed phase %s', task_id, stage_index)
 
     def _run_phase1(self, task_id: str) -> Dict[str, Any]:
-        from narrative.storycraft.graph_builder import build_phase_one_graph
-        from narrative.storycraft.handoff_export import persist_phase_one_outputs
+        from agents.story_agent.graph import build_phase_one_graph
+        from agents.story_agent.handoff_export import persist_phase_one_outputs
         snapshot = self.store.get(task_id)
         if snapshot is None:
             raise KeyError(f'Unknown job_id: {task_id}')
@@ -70,7 +70,7 @@ class FlowRunner:
         return {'phase1': {'output_dir': str(phase_one_dir), 'artifacts': artifact_paths, 'story': outcome['story_output'], 'characters': outcome['character_roster'], 'script': outcome['script_output']}}
 
     def _run_phase2(self, task_id: str) -> Dict[str, Any]:
-        from narrative.sound.audio_phase import execute_phase_two as phase2_agent
+        from agents.audio_agent.agent import execute_phase_two as phase2_agent
         snapshot = self.store.get(task_id)
         if snapshot is None:
             raise KeyError(f'Unknown job_id: {task_id}')
@@ -84,7 +84,7 @@ class FlowRunner:
         return {'phase2': {'output_dir': str(phase_two_dir), 'timing_manifest': outcome['timing_manifest'], 'full_audio': outcome['full_audio'], 'summary': str(phase_two_dir / 'summary.json'), 'scene_count': outcome['scene_count'], 'segment_count': outcome['segment_count']}}
 
     def _run_phase3(self, task_id: str) -> Dict[str, Any]:
-        from narrative.cinematics.render_orchestrator import RenderCoordinator
+        from agents.video_agent.agent import RenderCoordinator
         snapshot = self.store.get(task_id)
         if snapshot is None:
             raise KeyError(f'Unknown job_id: {task_id}')

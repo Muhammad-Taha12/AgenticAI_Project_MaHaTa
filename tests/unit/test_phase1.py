@@ -1,16 +1,16 @@
 """Reworked module for tests.unit.test_phase1.py"""
 from __future__ import annotations
-from contracts.schemas.characters import AppearanceDescription, Character, CharacterRoster, VoiceConfig
-from contracts.schemas.handoffs import Phase2AudioHandoff, Phase3VideoHandoff
-from contracts.schemas.pipeline_state import Phase1State
-from contracts.schemas.scripts import DialogueLine, SceneScript, ScriptOutput
-from contracts.schemas.stories import Scene, StoryOutput
+from shared.schemas.characters import AppearanceDescription, Character, CharacterRoster, VoiceConfig
+from shared.schemas.handoffs import Phase2AudioHandoff, Phase3VideoHandoff
+from shared.schemas.pipeline_state import Phase1State
+from shared.schemas.scripts import DialogueLine, SceneScript, ScriptOutput
+from shared.schemas.stories import Scene, StoryOutput
 from langgraph.graph import END
-from narrative.storycraft.graph_builder import _route_character, _route_story
-from narrative.storycraft.handoff_export import build_phase2_handoff, build_phase3_handoff, persist_phase_one_outputs
-from narrative.storycraft.helpers.cast_checks import check_cast_consistency
-from narrative.storycraft.helpers.dialogue_checks import infer_emotion_profile, compose_visual_prompt, check_duration_budget
-from narrative.storycraft.helpers.plot_checks import estimate_story_duration, check_story_arc
+from agents.story_agent.graph import _route_character, _route_story
+from agents.story_agent.handoff_export import build_phase2_handoff, build_phase3_handoff, persist_phase_one_outputs
+from agents.story_agent.helpers.cast_checks import check_cast_consistency
+from agents.story_agent.helpers.dialogue_checks import infer_emotion_profile, compose_visual_prompt, check_duration_budget
+from agents.story_agent.helpers.plot_checks import estimate_story_duration, check_story_arc
 from pathlib import Path
 from pydantic import ValidationError
 from typing import Any, Dict
@@ -116,14 +116,14 @@ class TestScriptSchema:
 class TestPipelineGuards:
 
     def test_empty_prompt_returns_error(self):
-        from narrative.storycraft.pipeline import execute_phase_one
+        from agents.story_agent.agent import execute_phase_one
         outcome = execute_phase_one('')
         assert outcome['success'] is False
         assert any(('empty' in e.lower() for e in outcome['errors']))
 
     def test_missing_api_key_returns_error(self, monkeypatch):
         monkeypatch.delenv('GOOGLE_API_KEY', raising=False)
-        from narrative.storycraft.pipeline import execute_phase_one
+        from agents.story_agent.agent import execute_phase_one
         outcome = execute_phase_one('A brave knight')
         assert outcome['success'] is False
         assert any(('GOOGLE_API_KEY' in e for e in outcome['errors']))

@@ -2,7 +2,7 @@
 from __future__ import annotations
 from datetime import datetime
 from pathlib import Path
-from runtime_state.keeper import LedgerManager
+from state_manager.state_manager import LedgerManager
 from typing import Any, Dict, Optional
 import uuid
 PROJECT_ROOT = Path(__file__).resolve().parents[2]

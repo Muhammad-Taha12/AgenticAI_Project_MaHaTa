@@ -1,8 +1,8 @@
 """Reworked module for tests.unit.test_phase2.py"""
 from __future__ import annotations
-from narrative.sound.audio_phase import execute_phase_two
+from agents.audio_agent.agent import execute_phase_two
 from pathlib import Path
-from toolkit.audio.voice_synth import speak_segment
+from mcp.tools.audio_tools.tts_tool import speak_segment
 import wave
 
 def test_synthesize_tts_segment_writes_wav(tmp_path):
