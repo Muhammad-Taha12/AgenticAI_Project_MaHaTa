@@ -1,4 +1,3 @@
-"""Reworked module for backend.runtime.pipeline_runner.py"""
 from __future__ import annotations
 from backend.runtime.ledger import RunLedger, PROJECT_ROOT
 from pathlib import Path
@@ -66,7 +65,7 @@ class FlowRunner:
         issues = outcome.get('errors', [])
         if issues or not all((outcome.get(key) for key in ('story_output', 'character_roster', 'script_output'))):
             raise RuntimeError('; '.join(issues) or 'Phase 1 did not produce all outputs')
-        artifact_paths = persist_phase_one_outputs(outcome['story_output'], outcome['character_roster'], outcome['script_output'], outcome.get('tools_log', []), issues, output_dir=phase_one_dir)
+        artifact_paths = persist_phase_one_outputs(outcome['story_output'], outcome['character_roster'], outcome['script_output'], outcome.get('tools_log', []), issues, destination_dir=phase_one_dir)
         return {'phase1': {'output_dir': str(phase_one_dir), 'artifacts': artifact_paths, 'story': outcome['story_output'], 'characters': outcome['character_roster'], 'script': outcome['script_output']}}
 
     def _run_phase2(self, task_id: str) -> Dict[str, Any]:
