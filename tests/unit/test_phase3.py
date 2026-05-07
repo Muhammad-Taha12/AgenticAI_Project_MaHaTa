@@ -1,0 +1,213 @@
+"""Reworked module for tests.unit.test_phase3.py"""
+from pathlib import Path
+import json
+import os
+import pytest
+import shutil
+import sys
+import tempfile
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+
+def make_dummy_timing_manifest():
+    return [{'scene_id': 'scene_001', 'audio_file': 'scene_001_mix.wav', 'start_ms': 0, 'end_ms': 4000, 'text': 'It was a beautiful morning.', 'character': 'Narrator'}, {'scene_id': 'scene_002', 'audio_file': 'scene_002_mix.wav', 'start_ms': 4000, 'end_ms': 9000, 'text': 'Then the storm arrived.', 'character': 'Narrator'}]
+
+def make_dummy_scene_handoff():
+    return {'title': 'Test Story', 'scenes': [{'scene_id': 'scene_001', 'description': 'A bright meadow with flowers', 'visual_prompt': 'Sunlit meadow, vibrant green grass, wildflowers', 'tone': 'peaceful', 'setting': 'outdoor meadow', 'duration_sec': 5.0}, {'scene_id': 'scene_002', 'description': 'Dark stormy skies over a city', 'visual_prompt': 'Ominous storm clouds looming over urban skyline at dusk', 'tone': 'tense', 'setting': 'city rooftop', 'duration_sec': 5.0}]}
+
+def make_dummy_audio(target_path: str, duration_s: float=3.0):
+    """Create a silent WAV file for testing."""
+    import wave, struct, math
+    Path(target_path).parent.mkdir(parents=True, exist_ok=True)
+    sample_rate = 22050
+    n_samples = int(sample_rate * duration_s)
+    with wave.open(target_path, 'w') as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(sample_rate)
+        blob = struct.pack('<' + 'h' * n_samples, *[0] * n_samples)
+        wf.writeframes(blob)
+
+def generate_scene_image(scene_key: str, visual_prompt: str, tone: str, setting: str, frame_width: int, frame_height: int, destination: str):
+    """Compatibility helper for older test fixtures."""
+    out_dir = Path(destination).parent
+    out_dir.mkdir(parents=True, exist_ok=True)
+    first_path = generate_story_frames(
+        scene_key=scene_key,
+        visual_prompt=visual_prompt,
+        negative_prompt='',
+        tone=tone,
+        setting=setting,
+        num_images=1,
+        destination_dir=str(out_dir),
+        frame_width=frame_width,
+        frame_height=frame_height,
+        use_pollinations=False,
+    )[0]
+    Path(first_path).replace(destination)
+    return destination
+
+
+class TestVideoAgentIntegration:
+
+    def test_full_pipeline_two_scenes(self, tmp_path):
+        from agents.video_agent.agent import RenderCoordinator
+        p1_dir = tmp_path / 'phase1'
+        p1_dir.mkdir()
+        handoff = make_dummy_scene_handoff()
+        (p1_dir / 'phase3_video_handoff.json').write_text(json.dumps(handoff))
+        p2_dir = tmp_path / 'phase2'
+        (p2_dir / 'scenes').mkdir(parents=True)
+        manifest = make_dummy_timing_manifest()
+        (p2_dir / 'timing_manifest.json').write_text(json.dumps(manifest))
+        for sid in ['scene_001', 'scene_002']:
+            make_dummy_audio(str(p2_dir / 'scenes' / f'{sid}_mix.wav'), 4.0)
+        out_dir = str(tmp_path / 'phase3_output')
+        agent = RenderCoordinator(phase1_run_dir=str(p1_dir), phase2_run_dir=str(p2_dir), output_dir=out_dir, burn_subtitles=False, use_ollama=False, fps=24)
+        summary = agent.run()
+        assert summary['status'] == 'success'
+        assert Path(summary['final_video']).exists()
+        assert summary['scenes_processed'] >= 1
+
+    def test_missing_audio_still_produces_video(self, tmp_path):
+        """Agent should produce a video even with no audio files."""
+        from agents.video_agent.agent import RenderCoordinator
+        p1_dir = tmp_path / 'phase1'
+        p1_dir.mkdir()
+        handoff = {'title': 'Silent Movie', 'scenes': [{'scene_id': 's001', 'visual_prompt': 'A quiet forest', 'tone': 'peaceful', 'setting': 'forest', 'duration_sec': 3.0}]}
+        (p1_dir / 'phase3_video_handoff.json').write_text(json.dumps(handoff))
+        p2_dir = tmp_path / 'phase2_empty'
+        p2_dir.mkdir()
+        out_dir = str(tmp_path / 'phase3_silent')
+        agent = RenderCoordinator(phase1_run_dir=str(p1_dir), phase2_run_dir=str(p2_dir), output_dir=out_dir, use_ollama=False, fps=24)
+        summary = agent.run()
+        assert summary['status'] == 'success'
+        assert Path(summary['final_video']).exists()
+
+class TestSubtitleTool:
+
+    def test_generates_srt(self, tmp_path):
+        from mcp.tools.video_tools.subtitle_tool import CaptionWriterTool
+        tool = CaptionWriterTool()
+        manifest = make_dummy_timing_manifest()
+        out = str(tmp_path / 'subs.srt')
+        outcome = tool.execute(timing_manifest=manifest, output_path=out)
+        assert outcome['success'] is True
+        payload_text = Path(out).read_text()
+        assert '1\n' in payload_text
+        assert '-->' in payload_text
+        assert 'Narrator' in payload_text
+
+    def test_empty_manifest_creates_file(self, tmp_path):
+        from mcp.tools.video_tools.subtitle_tool import CaptionWriterTool
+        tool = CaptionWriterTool()
+        out = str(tmp_path / 'empty.srt')
+        outcome = tool.execute(timing_manifest=[], output_path=out)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+
+    def test_ms_to_srt_time(self):
+        from mcp.tools.video_tools.subtitle_tool import format_srt_timestamp
+        assert format_srt_timestamp(0) == '00:00:00,000'
+        assert format_srt_timestamp(1000) == '00:00:01,000'
+        assert format_srt_timestamp(65500) == '00:01:05,500'
+        assert format_srt_timestamp(3600000) == '01:00:00,000'
+        assert format_srt_timestamp(3661500) == '01:01:01,500'
+
+class TestImageGenTool:
+
+    def test_generates_png(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
+        tool = StoryboardTool()
+        out = str(tmp_path / 'test_scene.png')
+        outcome = tool.execute(scene_id='test_scene_001', visual_prompt='A futuristic city at night', tone='mysterious', setting='urban', output_path=out, use_ollama=False)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
+
+    def test_different_moods_produce_files(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
+        tool = StoryboardTool()
+        for mood in ['happy', 'sad', 'mysterious', 'tense', 'peaceful']:
+            out = str(tmp_path / f'{mood}.png')
+            outcome = tool.execute(scene_id=f'scene_{mood}', visual_prompt=f'A {mood} scene', tone=mood, setting='', output_path=out, use_ollama=False)
+            assert outcome['success'] is True, f'Failed for mood: {mood}'
+            assert Path(out).exists()
+
+    def test_space_scene_with_stars(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
+        tool = StoryboardTool()
+        out = str(tmp_path / 'space_scene.png')
+        outcome = tool.execute(scene_id='space_scene_001', visual_prompt='Astronaut floating in deep space among stars and galaxies', tone='mysterious', setting='outer space', output_path=out, use_ollama=False)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+
+    def test_city_scene(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import StoryboardTool
+        tool = StoryboardTool()
+        out = str(tmp_path / 'city_scene.png')
+        outcome = tool.execute(scene_id='city_scene_001', visual_prompt='Busy city street at night with neon signs and tall skyscrapers', tone='exciting', setting='city', output_path=out, use_ollama=False)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+
+class TestFFmpegTool:
+
+    def test_ken_burns_zoom_in(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
+        img_path = str(tmp_path / 'test.png')
+        generate_scene_image('test', 'A test scene', 'neutral', '', 1280, 720, img_path)
+        tool = FfmpegBridgeTool()
+        out = str(tmp_path / 'ken_burns.mp4')
+        outcome = tool.execute(operation='ken_burns', image_path=img_path, output_path=out, duration_sec=3.0, effect='zoom_in', fps=24)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+
+    def test_ken_burns_static(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
+        img_path = str(tmp_path / 'test2.png')
+        generate_scene_image('test2', 'Static scene', 'happy', '', 1280, 720, img_path)
+        tool = FfmpegBridgeTool()
+        out = str(tmp_path / 'static.mp4')
+        outcome = tool.execute(operation='ken_burns', image_path=img_path, output_path=out, duration_sec=2.0, effect='static')
+        assert outcome['success'] is True
+        assert Path(out).exists()
+
+    def test_add_audio_to_video(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
+        img_path = str(tmp_path / 'img.png')
+        generate_scene_image('s', 'scene', 'neutral', '', 1280, 720, img_path)
+        raw_mp4 = str(tmp_path / 'raw.mp4')
+        FfmpegBridgeTool().execute(operation='ken_burns', image_path=img_path, output_path=raw_mp4, duration_sec=3.0, effect='static')
+        source_audio = str(tmp_path / 'audio.wav')
+        make_dummy_audio(source_audio, 3.0)
+        out = str(tmp_path / 'with_audio.mp4')
+        outcome = FfmpegBridgeTool().execute(operation='add_audio', video_path=raw_mp4, audio_path=source_audio, output_path=out)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+
+    def test_invalid_operation_raises(self):
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
+        with pytest.raises(ValueError):
+            FfmpegBridgeTool().execute(operation='does_not_exist')
+
+class TestCompositorTool:
+
+    def test_compositor_two_clips(self, tmp_path):
+        from mcp.tools.vision_tools.image_gen_tool import generate_story_frames
+        from mcp.tools.video_tools.ffmpeg_tool import FfmpegBridgeTool
+        from mcp.tools.video_tools.compositor_tool import SceneComposerTool
+        clip_items = []
+        for i in range(2):
+            img = str(tmp_path / f'img_{i}.png')
+            generate_scene_image(f's{i}', f'Scene {i}', 'neutral', '', 1280, 720, img)
+            clip = str(tmp_path / f'clip_{i}.mp4')
+            FfmpegBridgeTool().execute(operation='ken_burns', image_path=img, output_path=clip, duration_sec=2.0, effect='static')
+            clip_items.append(clip)
+        out = str(tmp_path / 'final.mp4')
+        outcome = SceneComposerTool().execute(scene_clip_paths=clip_items, output_path=out, story_title='Test Story', transition_duration=0.3, add_title_card=False, add_end_card=False)
+        assert outcome['success'] is True
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
+sys.path.insert(0, str(PROJECT_ROOT))
