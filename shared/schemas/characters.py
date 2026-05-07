@@ -1,4 +1,3 @@
-"""Reworked module for contracts.schemas.characters.py"""
 from __future__ import annotations
 from pydantic import BaseModel, Field
 from typing import List, Literal
@@ -7,7 +6,7 @@ class VoiceConfig(BaseModel):
     gender: Literal['male', 'female', 'neutral']
     age_range: Literal['child', 'young_adult', 'adult', 'elderly']
     tone: str = Field(description="Voice tone descriptor, e.g. 'warm', 'authoritative', 'gentle'")
-    speed: float = Field(ge=0.5, le=2.0, default=1.0, description='Speaking speed multiplier')
+    speed: float = Field(ge=0.1, le=2.0, default=1.0, description='Speaking speed multiplier')
     emotion_baseline: str = Field(description="Default emotional state, e.g. 'calm', 'enthusiastic'")
     accent: str = Field(default='neutral', description="Accent, e.g. 'american', 'british', 'neutral'")
     tts_style_tags: List[str] = Field(default_factory=list, description="Style tags for TTS synthesis, e.g. ['whispery', 'dramatic']")

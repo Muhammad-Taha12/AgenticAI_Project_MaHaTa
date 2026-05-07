@@ -1,4 +1,3 @@
-"""Reworked module for contracts.schemas.scripts.py"""
 from __future__ import annotations
 from pydantic import BaseModel, Field
 from typing import List, Literal
@@ -24,4 +23,4 @@ class DialogueLine(BaseModel):
     copy_text: str = Field(description='Spoken dialogue or narration text')
     emotion: str = Field(description='Emotion for TTS: excited, sad, angry, calm, curious, etc.')
     timing_offset_seconds: float = Field(ge=0.0, description='Seconds from scene start when this line begins')
-    duration_hint_seconds: float = Field(ge=0.5, description='Estimated time in seconds to speak this line')
+    duration_hint_seconds: float = Field(ge=0.1, description='Estimated time in seconds to speak this line')

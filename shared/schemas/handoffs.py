@@ -1,4 +1,3 @@
-"""Reworked module for contracts.schemas.handoffs.py"""
 from __future__ import annotations
 from shared.schemas.characters import VoiceConfig
 from pydantic import BaseModel, Field
@@ -33,5 +32,5 @@ class AudioSegment(BaseModel):
     copy_text: str = Field(description='Text to synthesise')
     voice_config: VoiceConfig
     timing_offset_seconds: float = Field(ge=0.0)
-    duration_hint_seconds: float = Field(ge=0.5)
+    duration_hint_seconds: float = Field(ge=0.1)
     emotion: str
