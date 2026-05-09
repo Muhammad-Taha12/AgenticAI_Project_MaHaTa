@@ -1,0 +1,427 @@
+{
+  "job_id": "3e9ead95c2b74364acab267ea1b80601",
+  "prompt": "A detective finds a hidden treasure.",
+  "status": "failed",
+  "current_phase": null,
+  "phases": {
+    "1": "completed",
+    "2": "running",
+    "3": "pending"
+  },
+  "progress": 45,
+  "message": "execute_phase_two() got an unexpected keyword argument 'output_dir'",
+  "errors": [
+    "execute_phase_two() got an unexpected keyword argument 'output_dir'"
+  ],
+  "outputs": {
+    "phase1": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1",
+      "artifacts": {
+        "story": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1\\story.json",
+        "characters": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1\\characters.json",
+        "script": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1\\script.json",
+        "phase2_audio_handoff": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1\\phase2_audio_handoff.json",
+        "phase3_video_handoff": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1\\phase3_video_handoff.json",
+        "summary": "D:\\Agentic Project\\data\\jobs\\3e9ead95c2b74364acab267ea1b80601\\phase1\\summary.json"
+      },
+      "story": {
+        "headline": "The Detective's Treasure",
+        "genre": "Adventure, Mystery",
+        "themes": [
+          "Perseverance",
+          "Discovery"
+        ],
+        "arc": [
+          "intro",
+          "rising_action",
+          "climax",
+          "falling_action",
+          "resolution"
+        ],
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "headline": "The Mysterious Map",
+            "setting": "A dimly lit, dusty attic. Old trunks and forgotten memories surround the detective.",
+            "tone": "Mysterious",
+            "arc_position": "intro",
+            "summary": "The detective discovers an old map that supposedly leads to a hidden treasure.",
+            "estimated_duration_seconds": 30,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_002",
+            "headline": "Following the Clues",
+            "setting": "A rainy city street. The detective follows the map's cryptic clues.",
+            "tone": "Determined",
+            "arc_position": "rising_action",
+            "summary": "The detective deciphers the map, leading him to a hidden location.",
+            "estimated_duration_seconds": 45,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_003",
+            "headline": "The Treasure Chamber",
+            "setting": "A secret underground chamber. Gold and jewels sparkle in the dim light.",
+            "tone": "Excited",
+            "arc_position": "climax",
+            "summary": "The detective finds the treasure, but realizes it's not what he expected.",
+            "estimated_duration_seconds": 60,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_004",
+            "headline": "The Unexpected Legacy",
+            "setting": "Back in the attic. The detective reflects on his discovery.",
+            "tone": "Reflective",
+            "arc_position": "falling_action",
+            "summary": "The detective realizes that the treasure was a key to unlocking a family legacy.",
+            "estimated_duration_seconds": 15,
+            "themes": []
+          }
+        ],
+        "total_estimated_duration_seconds": 150,
+        "premise": "",
+        "setting_description": ""
+      },
+      "characters": {
+        "characters": [
+          {
+            "character_id": "char_001",
+            "name": "Detective Jameson",
+            "role": "protagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "determined",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "intelligent detective"
+              ]
+            },
+            "appearance": {
+              "physical_description": "A ruggedly handsome man in his mid-40s with a strong jawline, piercing brown eyes, and short, dark hair. He wears worn leather gloves and carries a well-worn fedora hat.",
+              "clothing": "worn leather gloves, fedora hat",
+              "distinctive_features": "strong jawline, piercing brown eyes",
+              "color_palette": [
+                "brown",
+                "black"
+              ],
+              "art_style_prompt": "3D Pixar-style CGI detective"
+            },
+            "personality_traits": [
+              "brave",
+              "intelligent",
+              "resourceful"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "former police officer"
+          },
+          {
+            "character_id": "char_002",
+            "name": "Samantha 'Sam' Thompson",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "young_adult",
+              "tone": "confident",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "tech-savvy sidekick"
+              ]
+            },
+            "appearance": {
+              "physical_description": "A determined young woman with short, spiky black hair and piercing green eyes. She wears a blue leather jacket and has a silver earring in her left ear.",
+              "clothing": "blue leather jacket",
+              "distinctive_features": "short, spiky black hair, piercing green eyes",
+              "color_palette": [
+                "black",
+                "blue"
+              ],
+              "art_style_prompt": "3D Pixar-style CGI tech expert"
+            },
+            "personality_traits": [
+              "confident",
+              "tech-savvy",
+              "independent"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "computer science student"
+          },
+          {
+            "character_id": "char_003",
+            "name": "Henry Lee",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "elderly",
+              "tone": "warm",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "wise_mentor"
+              ]
+            },
+            "appearance": {
+              "physical_description": "An elderly man with white hair and a gentle smile. He wears a pair of round glasses perched on the end of his nose.",
+              "clothing": "round glasses, white hair",
+              "distinctive_features": "white hair, gentle smile",
+              "color_palette": [
+                "white"
+              ],
+              "art_style_prompt": "2D flat-design cartoon wise old man"
+            },
+            "personality_traits": [
+              "wise",
+              "kind",
+              "insightful"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "former professor"
+          },
+          {
+            "character_id": "char_004",
+            "name": "Emily Patel",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "young_adult",
+              "tone": "soft",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "emotional_support"
+              ]
+            },
+            "appearance": {
+              "physical_description": "A shy young woman with long, curly brown hair and bright brown eyes. She wears a yellow sundress and has a small tattoo of a sun on her wrist.",
+              "clothing": "yellow sundress",
+              "distinctive_features": "long, curly brown hair, bright brown eyes",
+              "color_palette": [
+                "brown",
+                "yellow"
+              ],
+              "art_style_prompt": "2D flat-design cartoon emotional support"
+            },
+            "personality_traits": [
+              "emotional",
+              "caring",
+              "supportive"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "nurse"
+          },
+          {
+            "character_id": "char_005",
+            "name": "Alex Chen",
+            "role": "antagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "sneering",
+              "speed": 1.0,
+              "emotion_baseline": "angry",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "scheming_villain"
+              ]
+            },
+            "appearance": {
+              "physical_description": "A tall, lean man with short, spiky black hair and piercing blue eyes. He wears a black leather jacket and has a silver earring in his left ear.",
+              "clothing": "black leather jacket",
+              "distinctive_features": "short, spiky black hair, piercing blue eyes",
+              "color_palette": [
+                "black"
+              ],
+              "art_style_prompt": "3D Pixar-style CGI scheming villain"
+            },
+            "personality_traits": [
+              "scheming",
+              " manipulative",
+              "power-hungry"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "former thief"
+          },
+          {
+            "character_id": "char_006",
+            "name": "Lily Tran",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "young_adult",
+              "tone": "excited",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "enthusiastic_sidekick"
+              ]
+            },
+            "appearance": {
+              "physical_description": "A bubbly young woman with short, straight black hair and bright brown eyes. She wears a pink hoodie and has a silver necklace around her neck.",
+              "clothing": "pink hoodie",
+              "distinctive_features": "short, straight black hair, bright brown eyes",
+              "color_palette": [
+                "black",
+                "pink"
+              ],
+              "art_style_prompt": "3D Pixar-style CGI enthusiastic sidekick"
+            },
+            "personality_traits": [
+              "excited",
+              "enthusiastic",
+              "optimistic"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "student"
+          }
+        ],
+        "global_art_style": "3D Pixar-style CGI"
+      },
+      "script": {
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "Ah, the map! It's been hidden away for so long.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "I think I can decipher the clues. But it won't be easy.",
+                "emotion": "determined",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_002",
+                "copy_text": "I think I can decipher the clues. But it won't be easy.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_004",
+                "character_id": "char_001",
+                "copy_text": "This is it! The treasure chamber!",
+                "emotion": "excited",
+                "timing_offset_seconds": 20.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_005",
+                "character_id": "char_002",
+                "copy_text": "This is it! The treasure chamber!",
+                "emotion": "neutral",
+                "timing_offset_seconds": 25.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_006",
+                "character_id": "char_001",
+                "copy_text": "I never thought I'd find it again.",
+                "emotion": "reflective",
+                "timing_offset_seconds": 30.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_007",
+                "character_id": "char_002",
+                "copy_text": "I never thought I'd find it again.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 35.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_008",
+                "character_id": "char_005",
+                "copy_text": "You'll never stop me!",
+                "emotion": "sneering",
+                "timing_offset_seconds": 40.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_009",
+                "character_id": "char_006",
+                "copy_text": "You'll never stop me!",
+                "emotion": "neutral",
+                "timing_offset_seconds": 45.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_010",
+                "character_id": "char_004",
+                "copy_text": "You're going to be okay.",
+                "emotion": "soft",
+                "timing_offset_seconds": 50.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_011",
+                "character_id": "char_006",
+                "copy_text": "You're going to be okay.",
+                "emotion": "soft",
+                "timing_offset_seconds": 55.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "mysterious",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 120
+          }
+        ]
+      }
+    }
+  },
+  "created_at": "2026-05-07T15:42:33Z",
+  "updated_at": "2026-05-07T16:16:57Z"
+}

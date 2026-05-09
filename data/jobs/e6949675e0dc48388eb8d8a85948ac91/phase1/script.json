@@ -1,0 +1,189 @@
+{
+  "scenes": [
+    {
+      "scene_key": "scene_001",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Ah, the map finally makes sense! I can see the treasure chamber now!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 3.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "This must be it! The treasure is within my grasp!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 4.0,
+          "duration_hint_seconds": 3.5
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "I've been searching for this treasure for years! It's finally mine!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 7.0,
+          "duration_hint_seconds": 4.5
+        }
+      ],
+      "visual_prompt": "A dimly lit, dusty attic. Old trunks and forgotten relics surround the detective.",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "static",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "mysterious",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 15
+    },
+    {
+      "scene_key": "scene_002",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "I need to decipher the map's cryptic clues. This is going to be a challenge!",
+          "emotion": "neutral_with_anxiety",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 4.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "The map says to follow the stream. I hope it leads me to the treasure!",
+          "emotion": "neutral_with_anxiety",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 4.5
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "I'm not sure what's going on, but I'll figure it out! I always do!",
+          "emotion": "neutral_with_anxiety",
+          "timing_offset_seconds": 9.0,
+          "duration_hint_seconds": 4.5
+        }
+      ],
+      "visual_prompt": "A dense, misty forest. The detective follows the map's cryptic clues.",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "suspenseful",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 30
+    },
+    {
+      "scene_key": "scene_003",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Wow! The treasure chamber is even more beautiful than I imagined!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 3.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "I can see the treasure glinting in the dim light! It's mine!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 4.0,
+          "duration_hint_seconds": 3.5
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "I've finally found it! The treasure is mine!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 7.0,
+          "duration_hint_seconds": 4.5
+        }
+      ],
+      "visual_prompt": "A hidden underground cave. The treasure glitters in the dim light.",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "static",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "exciting",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 20
+    },
+    {
+      "scene_key": "scene_004",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Wait, what's going on? I thought we were here to find treasure not...not face our pasts!",
+          "emotion": "neutral_with_anxiety",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 4.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "I remember now! My parents were treasure hunters too!",
+          "emotion": "neutral_with_anxiety",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 4.5
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "I never knew that! I'm so glad I found out!",
+          "emotion": "neutral_with_anxiety",
+          "timing_offset_seconds": 9.0,
+          "duration_hint_seconds": 4.5
+        }
+      ],
+      "visual_prompt": "The same underground cave. The detective confronts the guardian of the treasure.",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "surprising",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 25
+    },
+    {
+      "scene_key": "scene_005",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "We did it! We found the treasure and learned so much about ourselves along the way!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 3.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "I'm so proud of myself for persevering and never giving up!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 4.0,
+          "duration_hint_seconds": 3.5
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "The treasure may be gone, but the memories and lessons will stay with me forever!",
+          "emotion": "neutral_with_determination",
+          "timing_offset_seconds": 7.0,
+          "duration_hint_seconds": 4.5
+        }
+      ],
+      "visual_prompt": "The same underground cave. The treasure is finally within reach.",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "static",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "triumphant",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 15
+    }
+  ]
+}

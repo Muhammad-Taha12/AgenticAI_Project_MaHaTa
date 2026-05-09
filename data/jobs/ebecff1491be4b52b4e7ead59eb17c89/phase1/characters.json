@@ -1,0 +1,119 @@
+{
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "Detective Jameson",
+      "role": "protagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "confident",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "American",
+        "tts_style_tags": [
+          "friendly",
+          "authoritative"
+        ]
+      },
+      "appearance": {
+        "physical_description": "A ruggedly handsome man in his mid-30s with short brown hair and piercing blue eyes. He wears a worn leather jacket, jeans, and scuffed boots.",
+        "clothing": "leather jacket, jeans, scuffed boots",
+        "distinctive_features": "piercing blue eyes",
+        "color_palette": [
+          "brown",
+          "blue"
+        ],
+        "art_style_prompt": "young man with short brown hair, piercing blue eyes, rugged expression"
+      },
+      "personality_traits": [
+        "confident",
+        "determined"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004"
+      ],
+      "background": "Law enforcement"
+    },
+    {
+      "character_id": "char_002",
+      "name": "Dr. Sophia Patel",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "female",
+        "age_range": "young_adult",
+        "tone": "warm",
+        "speed": 0.7,
+        "emotion_baseline": "positive",
+        "accent": "Indian",
+        "tts_style_tags": [
+          "nurturing",
+          "engaging"
+        ]
+      },
+      "appearance": {
+        "physical_description": "A young woman with long black hair and expressive brown eyes. She wears a pair of glasses perched on the end of her nose and has a warm smile.",
+        "clothing": "glasses, warm smile",
+        "distinctive_features": "expressive brown eyes",
+        "color_palette": [
+          "black",
+          "brown"
+        ],
+        "art_style_prompt": "young woman with long black hair, expressive brown eyes, glasses"
+      },
+      "personality_traits": [
+        "warm",
+        "intelligent"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004"
+      ],
+      "background": "Academia"
+    },
+    {
+      "character_id": "char_003",
+      "name": "Alex Chen",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "edgy",
+        "speed": 0.9,
+        "emotion_baseline": "excited",
+        "accent": "Chinese-American",
+        "tts_style_tags": [
+          "vibrant",
+          "adventurous"
+        ]
+      },
+      "appearance": {
+        "physical_description": "A lean, athletic man in his late 20s with short spiky black hair and a mischievous grin. He wears a sleek black jacket and has a silver watch on his wrist.",
+        "clothing": "black jacket, silver watch",
+        "distinctive_features": "short spiky black hair",
+        "color_palette": [
+          "black",
+          "silver"
+        ],
+        "art_style_prompt": "young man with short spiky black hair, mischievous grin, sleek black jacket"
+      },
+      "personality_traits": [
+        "edgy",
+        "playful"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004"
+      ],
+      "background": "Thief"
+    }
+  ],
+  "global_art_style": "Studio Ghibli-style watercolour anime"
+}

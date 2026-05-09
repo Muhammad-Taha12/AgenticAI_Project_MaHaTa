@@ -1,0 +1,149 @@
+{
+  "scenes": [
+    {
+      "scene_key": "scene_001",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "I have to find that treasure! ",
+          "emotion": "EXCITED",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 2.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "It's been years since I last saw it.",
+          "emotion": "REFLECTIVE",
+          "timing_offset_seconds": 3.0,
+          "duration_hint_seconds": 4.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "Mysterious",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 15
+    },
+    {
+      "scene_key": "scene_002",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "I have to follow the map.",
+          "emotion": "EXCITED",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 2.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "The forest is dense and treacherous.",
+          "emotion": "CAUTIOUS",
+          "timing_offset_seconds": 3.0,
+          "duration_hint_seconds": 4.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "Exciting",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 20
+    },
+    {
+      "scene_key": "scene_003",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "I think I've found the entrance.",
+          "emotion": "ANTICIPATORY",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 2.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "The air is musty and filled with age.",
+          "emotion": "INTRiguING",
+          "timing_offset_seconds": 3.0,
+          "duration_hint_seconds": 4.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "Anticipatory",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 25
+    },
+    {
+      "scene_key": "scene_004",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "I see ancient artifacts and symbols.",
+          "emotion": "INTRiguING",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 2.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "There's a hidden message.",
+          "emotion": "EXCITED",
+          "timing_offset_seconds": 3.0,
+          "duration_hint_seconds": 4.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "Intriguing",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 20
+    },
+    {
+      "scene_key": "scene_005",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "I've uncovered the treasure's secret.",
+          "emotion": "REFLECTIVE",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 2.5
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "It's more than just gold and jewels.",
+          "emotion": "INTELLECTUAL",
+          "timing_offset_seconds": 3.0,
+          "duration_hint_seconds": 4.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "Reflective",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 15
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "visual_prompt": "A dimly lit alleyway, Tokyo streets at night",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 35,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "visual_prompt": "A flashback of the yakuza family's past",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 30,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "visual_prompt": "A cramped, dimly lit room in the yakuza headquarters",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 30,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002"
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "visual_prompt": "The same cramped room, now empty and bare",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 30,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002"
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "visual_prompt": "A brighter, more hopeful scene",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 40,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_003",
+        "char_004"
+      ]
+    }
+  ],
+  "character_appearance_prompts": {
+    "char_001": "young man with short, spiky black hair, wearing a black leather jacket, determined expression",
+    "char_002": "tall man with slicked-back black hair, wearing a black suit, cold expression",
+    "char_003": "older man with thinning grey hair, wearing a traditional Japanese kimono, wise expression",
+    "char_004": "young woman with short, spiky pink hair, wearing youthful fashion, excited expression"
+  },
+  "global_art_style": "Studio Ghibli-style watercolour anime"
+}

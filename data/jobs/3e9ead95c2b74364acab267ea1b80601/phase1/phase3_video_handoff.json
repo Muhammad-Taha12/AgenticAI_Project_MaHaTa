@@ -1,0 +1,30 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 120,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003",
+        "char_004",
+        "char_005",
+        "char_006"
+      ]
+    }
+  ],
+  "character_appearance_prompts": {
+    "char_001": "3D Pixar-style CGI detective",
+    "char_002": "3D Pixar-style CGI tech expert",
+    "char_003": "2D flat-design cartoon wise old man",
+    "char_004": "2D flat-design cartoon emotional support",
+    "char_005": "3D Pixar-style CGI scheming villain",
+    "char_006": "3D Pixar-style CGI enthusiastic sidekick"
+  },
+  "global_art_style": "3D Pixar-style CGI"
+}

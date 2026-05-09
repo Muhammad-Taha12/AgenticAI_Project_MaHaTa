@@ -77,7 +77,7 @@ class FlowRunner:
         if not handoff:
             raise RuntimeError('Phase 2 requires phase2_audio_handoff from Phase 1')
         phase_two_dir = self.store.job_dir(task_id) / 'phase2'
-        outcome = phase2_agent(handoff, output_dir=phase_two_dir)
+        outcome = phase2_agent(handoff, destination_dir=phase_two_dir)
         if not outcome.get('success'):
             raise RuntimeError('; '.join(outcome.get('errors', ['Phase 2 failed'])))
         return {'phase2': {'output_dir': str(phase_two_dir), 'timing_manifest': outcome['timing_manifest'], 'full_audio': outcome['full_audio'], 'summary': str(phase_two_dir / 'summary.json'), 'scene_count': outcome['scene_count'], 'segment_count': outcome['segment_count']}}
@@ -93,6 +93,6 @@ class FlowRunner:
         if not phase_one_dir or not phase_two_dir:
             raise RuntimeError('Phase 3 requires Phase 1 and Phase 2 outputs')
         phase_three_dir = self.store.job_dir(task_id) / 'phase3'
-        agent = RenderCoordinator(phase1_run_dir=phase_one_dir, phase2_run_dir=phase_two_dir, output_dir=str(phase_three_dir), burn_subs=os.environ.get('BURN_SUBTITLES', 'true').lower() != 'false', use_ollama=os.environ.get('USE_OLLAMA', 'false').lower() == 'true', images_per_scene=int(os.environ.get('IMAGES_PER_SCENE', '3')))
+        agent = RenderCoordinator(phase_one_run_dir=phase_one_dir, phase_two_run_dir=phase_two_dir, destination_dir=str(phase_three_dir), burn_subs=os.environ.get('BURN_SUBTITLES', 'true').lower() != 'false', use_ollama=os.environ.get('USE_OLLAMA', 'false').lower() == 'true', images_per_scene=int(os.environ.get('IMAGES_PER_SCENE', '3')))
         outcome = agent.run()
         return {'phase3': {'output_dir': str(phase_three_dir), 'final_video': outcome['final_video'], 'subtitles': outcome.get('subtitles'), 'summary': str(phase_three_dir / 'summary.json'), 'scene_clips': outcome.get('scene_clips', [])}}

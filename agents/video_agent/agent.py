@@ -124,7 +124,7 @@ def main():
     print(f'Images per scene : {images_per_scene}')
     print(f'Burn subtitles   : {burn_subs}')
     print(f'Use Ollama       : {use_ollama}')
-    agent = RenderCoordinator(phase1_run_dir=phase_one_dir, phase2_run_dir=phase_two_dir, output_dir=destination_dir, burn_subs=burn_subs, use_ollama=use_ollama, images_per_scene=images_per_scene, fps=args.fps, width=args.width, height=args.height)
+    agent = RenderCoordinator(phase_one_run_dir=phase_one_dir, phase_two_run_dir=phase_two_dir, destination_dir=destination_dir, burn_subs=burn_subs, use_ollama=use_ollama, images_per_scene=images_per_scene, frame_rate=args.fps, frame_width=args.width, frame_height=args.height)
     return agent.run()
 
 def latest_run_dir(base_dir: str) -> Optional[str]:
@@ -243,7 +243,7 @@ class RenderCoordinator:
         print(f'  [4/5] Crossfading {len(raw_clips)} image clips…')
         merged_clip = str(self.output_dir / 'clips' / f'{sid}_merged.mp4')
         try:
-            merge_scene_images(clip_paths=raw_clips, output_path=merged_clip, total_duration=total_dur, fps=self.fps, crossfade_sec=0.35)
+            merge_scene_images(clip_sources=raw_clips, destination=merged_clip, total_duration=total_dur, frame_rate=self.fps, crossfade_sec=0.35)
         except Exception as e:
             print(f'  WARNING: crossfade failed ({e}), using first clip.')
             merged_clip = raw_clips[0]
@@ -272,7 +272,7 @@ class RenderCoordinator:
         print('\n' + '=' * 60)
         print('  Phase 3 — Video Generation & Composition')
         print('=' * 60)
-        handoff = self._load_handoff()
+        handoff = self.load_handoff_bundle()
         manifest = self._load_manifest()
         scenes = handoff.get('scenes') or handoff.get('script', {}).get('scenes') or handoff.get('story', {}).get('scenes') or []
         headline = handoff.get('headline') or handoff.get('title') or handoff.get('story', {}).get('headline') or handoff.get('story', {}).get('title') or 'Untitled Story'

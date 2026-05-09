@@ -1,0 +1,522 @@
+{
+  "job_id": "8c673a40b87243b3b12bf46ca94ecac0",
+  "prompt": "A detective finds a hidden treasure.",
+  "status": "failed",
+  "current_phase": null,
+  "phases": {
+    "1": "completed",
+    "2": "completed",
+    "3": "running"
+  },
+  "progress": 75,
+  "message": "MoviePy not installed.",
+  "errors": [
+    "MoviePy not installed."
+  ],
+  "outputs": {
+    "phase1": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1",
+      "artifacts": {
+        "story": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\story.json",
+        "characters": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\characters.json",
+        "script": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\script.json",
+        "phase2_audio_handoff": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\phase2_audio_handoff.json",
+        "phase3_video_handoff": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\phase3_video_handoff.json",
+        "summary": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\summary.json"
+      },
+      "story": {
+        "headline": "The Detective's Treasure",
+        "genre": "Adventure, Mystery",
+        "themes": [
+          "Perseverance",
+          "Curiosity"
+        ],
+        "arc": [
+          "intro",
+          "rising_action",
+          "climax",
+          "falling_action",
+          "resolution"
+        ],
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "headline": "The Mysterious Map",
+            "setting": "A dimly lit, dusty antique shop.",
+            "tone": "Mysterious",
+            "arc_position": "intro",
+            "summary": "Detective Jameson discovers an old map in the shop's back room.",
+            "estimated_duration_seconds": 15,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_002",
+            "headline": "The Treasure Hunt Begins",
+            "setting": "A dense, misty forest.",
+            "tone": "Exciting",
+            "arc_position": "rising_action",
+            "summary": "Jameson follows the map's cryptic clues through the forest.",
+            "estimated_duration_seconds": 20,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_003",
+            "headline": "The First Obstacle",
+            "setting": "A rickety, old bridge suspended high above a chasm.",
+            "tone": "Tense",
+            "arc_position": "rising_action",
+            "summary": "Jameson must navigate the treacherous bridge to reach the next clue.",
+            "estimated_duration_seconds": 18,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_004",
+            "headline": "The Treasure Chamber",
+            "setting": "A hidden, underground chamber filled with gold and jewels.",
+            "tone": "Triumphant",
+            "arc_position": "climax",
+            "summary": "Jameson finally reaches the treasure, but realizes it's not what he expected.",
+            "estimated_duration_seconds": 25,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_005",
+            "headline": "The Unexpected Twist",
+            "setting": "The same underground chamber, now empty and quiet.",
+            "tone": "Reflective",
+            "arc_position": "falling_action",
+            "summary": "Jameson reflects on the true value of his discovery and the journey itself.",
+            "estimated_duration_seconds": 12,
+            "themes": []
+          }
+        ],
+        "total_estimated_duration_seconds": 90,
+        "premise": "",
+        "setting_description": ""
+      },
+      "characters": {
+        "characters": [
+          {
+            "character_id": "char_001",
+            "name": "Detective Jameson",
+            "role": "protagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "determined",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "standard_american",
+              "tts_style_tags": [
+                "friendly",
+                "adventurous"
+              ]
+            },
+            "appearance": {
+              "physical_description": "young man with short brown hair, wearing a fedora and carrying a magnifying glass.",
+              "clothing": "a worn leather jacket and jeans",
+              "distinctive_features": "a scar above his left eyebrow",
+              "color_palette": [
+                "#964B00",
+                "#6495ED"
+              ],
+              "art_style_prompt": "young man with short brown hair, wearing a fedora and carrying a magnifying glass, determined expression."
+            },
+            "personality_traits": [
+              "curious",
+              "determined"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004",
+              "scene_005"
+            ],
+            "background": "a seasoned detective with a passion for solving mysteries"
+          },
+          {
+            "character_id": "char_002",
+            "name": "Lila",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "young_adult",
+              "tone": "whimsical",
+              "speed": 1.0,
+              "emotion_baseline": "excited",
+              "accent": "standard_british",
+              "tts_style_tags": [
+                "playful",
+                "mischievous"
+              ]
+            },
+            "appearance": {
+              "physical_description": "a petite girl with curly blonde hair, wearing a bright yellow sundress.",
+              "clothing": "a pair of worn-out sneakers and a backpack",
+              "distinctive_features": "a small tattoo on her left ankle",
+              "color_palette": [
+                "#F7DC6F",
+                "#8BC34A"
+              ],
+              "art_style_prompt": "petite girl with curly blonde hair, wearing a bright yellow sundress, playful expression."
+            },
+            "personality_traits": [
+              "mischievous",
+              "adventurous"
+            ],
+            "scenes_appearing_in": [
+              "scene_002",
+              "scene_005"
+            ],
+            "background": "a free-spirited young woman with a love for exploration"
+          },
+          {
+            "character_id": "char_003",
+            "name": "Professor Thaddeus",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "elderly",
+              "tone": "authoritative",
+              "speed": 1.0,
+              "emotion_baseline": "serious",
+              "accent": "standard_english",
+              "tts_style_tags": [
+                "wise",
+                "knowledgeable"
+              ]
+            },
+            "appearance": {
+              "physical_description": "an elderly man with a long white beard, wearing a pair of glasses and a tweed jacket.",
+              "clothing": "a pair of worn-out slippers and a pocket watch",
+              "distinctive_features": "a cane in his right hand",
+              "color_palette": [
+                "#C9E4CA",
+                "#964B00"
+              ],
+              "art_style_prompt": "elderly man with a long white beard, wearing a pair of glasses and a tweed jacket, serious expression."
+            },
+            "personality_traits": [
+              "authoritative",
+              "knowledgeable"
+            ],
+            "scenes_appearing_in": [
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "a renowned expert in ancient history and cryptography"
+          },
+          {
+            "character_id": "char_004",
+            "name": "Roderick",
+            "role": "antagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "menacing",
+              "speed": 1.0,
+              "emotion_baseline": "angry",
+              "accent": "standard_american",
+              "tts_style_tags": [
+                "aggressive",
+                "suspicious"
+              ]
+            },
+            "appearance": {
+              "physical_description": "a tall, muscular man with a black leather jacket and sunglasses.",
+              "clothing": "a pair of ripped jeans and combat boots",
+              "distinctive_features": "a scar above his right eyebrow",
+              "color_palette": [
+                "#2F4F7F",
+                "#8B0A1A"
+              ],
+              "art_style_prompt": "tall, muscular man with a black leather jacket and sunglasses, menacing expression."
+            },
+            "personality_traits": [
+              "aggressive",
+              "suspicious"
+            ],
+            "scenes_appearing_in": [
+              "scene_003",
+              "scene_005"
+            ],
+            "background": "a ruthless treasure hunter with a hidden agenda"
+          },
+          {
+            "character_id": "char_005",
+            "name": "Eleanor",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "young_adult",
+              "tone": "emotional",
+              "speed": 1.0,
+              "emotion_baseline": "sad",
+              "accent": "standard_british",
+              "tts_style_tags": [
+                "sensitive",
+                "vulnerable"
+              ]
+            },
+            "appearance": {
+              "physical_description": "a young woman with long brown hair, wearing a white dress and carrying a small purse.",
+              "clothing": "a pair of worn-out shoes and a coat",
+              "distinctive_features": "a silver necklace with a small locket",
+              "color_palette": [
+                "#C9E4CA",
+                "#6495ED"
+              ],
+              "art_style_prompt": "young woman with long brown hair, wearing a white dress and carrying a small purse, emotional expression."
+            },
+            "personality_traits": [
+              "sensitive",
+              "vulnerable"
+            ],
+            "scenes_appearing_in": [
+              "scene_004",
+              "scene_005"
+            ],
+            "background": "a kind-hearted young woman with a love for art and music"
+          },
+          {
+            "character_id": "char_006",
+            "name": "Balthazar",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "young_adult",
+              "tone": "excited",
+              "speed": 1.0,
+              "emotion_baseline": "enthusiastic",
+              "accent": "standard_american",
+              "tts_style_tags": [
+                "energetic",
+                "optimistic"
+              ]
+            },
+            "appearance": {
+              "physical_description": "a young man with short blonde hair, wearing a bright orange jumpsuit and carrying a backpack.",
+              "clothing": "a pair of worn-out sneakers and a hat",
+              "distinctive_features": "a tattoo on his left arm",
+              "color_palette": [
+                "#F7DC6F",
+                "#8BC34A"
+              ],
+              "art_style_prompt": "young man with short blonde hair, wearing a bright orange jumpsuit and carrying a backpack, enthusiastic expression."
+            },
+            "personality_traits": [
+              "energetic",
+              "optimistic"
+            ],
+            "scenes_appearing_in": [
+              "scene_002",
+              "scene_005"
+            ],
+            "background": "a cheerful young adventurer with a love for exploration"
+          }
+        ],
+        "global_art_style": "Studio Ghibli-style watercolour anime"
+      },
+      "script": {
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I've found the map! It's a clue!",
+                "emotion": "excited",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "It looks like it was drawn by someone who knew their stuff.",
+                "emotion": "curious",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_001",
+                "copy_text": "I wonder what this map is leading me to...",
+                "emotion": "determined",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "{'background': {'color': 'brown', 'texture': 'wooden'}, 'objects': [{'type': 'map', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}, {'type': 'magnifying glass', 'size': {'width': 20, 'height': 10}, 'position': {'x': 250, 'y': 120}}], 'characters': [{'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}, {'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}]}",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "mysterious",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 15
+          },
+          {
+            "scene_key": "scene_002",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I've been following this map for hours.",
+                "emotion": "tired",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "But I won't give up now.",
+                "emotion": "determined",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_001",
+                "copy_text": "I can see the bridge up ahead.",
+                "emotion": "cautious",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "{'background': {'color': 'green', 'texture': 'forest'}, 'objects': [{'type': 'map', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}, {'type': 'bridge', 'size': {'width': 20, 'height': 10}, 'position': {'x': 250, 'y': 120}}], 'characters': [{'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}, {'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}]}",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "exciting",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 20
+          },
+          {
+            "scene_key": "scene_003",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I'm not sure I like this bridge.",
+                "emotion": "nervous",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "But I have to keep going.",
+                "emotion": "determined",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_001",
+                "copy_text": "I'll just take a deep breath and cross it.",
+                "emotion": "calm",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "{'background': {'color': 'blue', 'texture': 'water'}, 'objects': [{'type': 'bridge', 'size': {'width': 20, 'height': 10}, 'position': {'x': 200, 'y': 150}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}], 'characters': [{'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 400, 'y': 100}}]}",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "tense",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 18
+          },
+          {
+            "scene_key": "scene_004",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I made it!",
+                "emotion": "triumphant",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "The treasure is mine!",
+                "emotion": "excited",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_001",
+                "copy_text": "But what am I supposed to do with it?",
+                "emotion": "confused",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "{'background': {'color': 'gold', 'texture': 'jewels'}, 'objects': [{'type': 'treasure', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}], 'characters': [{'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 400, 'y': 100}}]}",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "triumphant",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 25
+          },
+          {
+            "scene_key": "scene_005",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I think I've been here before.",
+                "emotion": "reflective",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "But it's not the same.",
+                "emotion": "sad",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_001",
+                "copy_text": "I've learned so much on this journey.",
+                "emotion": "happy",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "{'background': {'color': 'blue', 'texture': 'water'}, 'objects': [{'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}, {'type': 'map', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}], 'characters': [{'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 400, 'y': 100}}]}",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "mellow",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 12
+          }
+        ]
+      }
+    },
+    "phase2": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase2",
+      "timing_manifest": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase2\\timing_manifest.json",
+      "full_audio": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase2\\full_audio.wav",
+      "summary": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase2\\summary.json",
+      "scene_count": 5,
+      "segment_count": 15
+    }
+  },
+  "created_at": "2026-05-07T21:36:09Z",
+  "updated_at": "2026-05-07T22:36:49Z"
+}

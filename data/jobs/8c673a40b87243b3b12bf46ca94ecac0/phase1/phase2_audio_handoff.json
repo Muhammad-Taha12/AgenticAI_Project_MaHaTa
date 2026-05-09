@@ -1,0 +1,416 @@
+{
+  "voice_configs": {
+    "char_001": {
+      "gender": "male",
+      "age_range": "adult",
+      "tone": "determined",
+      "speed": 1.0,
+      "emotion_baseline": "neutral",
+      "accent": "standard_american",
+      "tts_style_tags": [
+        "friendly",
+        "adventurous"
+      ]
+    },
+    "char_002": {
+      "gender": "female",
+      "age_range": "young_adult",
+      "tone": "whimsical",
+      "speed": 1.0,
+      "emotion_baseline": "excited",
+      "accent": "standard_british",
+      "tts_style_tags": [
+        "playful",
+        "mischievous"
+      ]
+    },
+    "char_003": {
+      "gender": "male",
+      "age_range": "elderly",
+      "tone": "authoritative",
+      "speed": 1.0,
+      "emotion_baseline": "serious",
+      "accent": "standard_english",
+      "tts_style_tags": [
+        "wise",
+        "knowledgeable"
+      ]
+    },
+    "char_004": {
+      "gender": "male",
+      "age_range": "adult",
+      "tone": "menacing",
+      "speed": 1.0,
+      "emotion_baseline": "angry",
+      "accent": "standard_american",
+      "tts_style_tags": [
+        "aggressive",
+        "suspicious"
+      ]
+    },
+    "char_005": {
+      "gender": "female",
+      "age_range": "young_adult",
+      "tone": "emotional",
+      "speed": 1.0,
+      "emotion_baseline": "sad",
+      "accent": "standard_british",
+      "tts_style_tags": [
+        "sensitive",
+        "vulnerable"
+      ]
+    },
+    "char_006": {
+      "gender": "male",
+      "age_range": "young_adult",
+      "tone": "excited",
+      "speed": 1.0,
+      "emotion_baseline": "enthusiastic",
+      "accent": "standard_american",
+      "tts_style_tags": [
+        "energetic",
+        "optimistic"
+      ]
+    }
+  },
+  "audio_segments": [
+    {
+      "segment_id": "scene_001_line_001",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I've found the map! It's a clue!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "excited"
+    },
+    {
+      "segment_id": "scene_001_line_002",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "It looks like it was drawn by someone who knew their stuff.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "curious"
+    },
+    {
+      "segment_id": "scene_001_line_003",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "I wonder what this map is leading me to...",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 15.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "determined"
+    },
+    {
+      "segment_id": "scene_002_line_001",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I've been following this map for hours.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "tired"
+    },
+    {
+      "segment_id": "scene_002_line_002",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "But I won't give up now.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "determined"
+    },
+    {
+      "segment_id": "scene_002_line_003",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "I can see the bridge up ahead.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 15.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "cautious"
+    },
+    {
+      "segment_id": "scene_003_line_001",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I'm not sure I like this bridge.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "nervous"
+    },
+    {
+      "segment_id": "scene_003_line_002",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "But I have to keep going.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "determined"
+    },
+    {
+      "segment_id": "scene_003_line_003",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "I'll just take a deep breath and cross it.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 15.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "calm"
+    },
+    {
+      "segment_id": "scene_004_line_001",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I made it!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "triumphant"
+    },
+    {
+      "segment_id": "scene_004_line_002",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "The treasure is mine!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "excited"
+    },
+    {
+      "segment_id": "scene_004_line_003",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "But what am I supposed to do with it?",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 15.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "confused"
+    },
+    {
+      "segment_id": "scene_005_line_001",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I think I've been here before.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "reflective"
+    },
+    {
+      "segment_id": "scene_005_line_002",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "But it's not the same.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "sad"
+    },
+    {
+      "segment_id": "scene_005_line_003",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "I've learned so much on this journey.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "standard_american",
+        "tts_style_tags": [
+          "friendly",
+          "adventurous"
+        ]
+      },
+      "timing_offset_seconds": 15.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "happy"
+    }
+  ],
+  "music_moods": {
+    "scene_001": "mysterious",
+    "scene_002": "exciting",
+    "scene_003": "tense",
+    "scene_004": "triumphant",
+    "scene_005": "mellow"
+  },
+  "total_segments": 15
+}

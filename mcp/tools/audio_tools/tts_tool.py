@@ -1,4 +1,3 @@
-"""Reworked module for toolkit.audio.tts.py"""
 from __future__ import annotations
 from pathlib import Path
 from typing import Any, Dict
@@ -68,7 +67,7 @@ def _synthesize_with_windows_sapi(segment: Dict[str, Any], target_path: Path) ->
     speed = float(voice_config.get('speed', 1.0) or 1.0)
     emotion = str(segment.get('emotion', 'neutral'))
     rate = _sapi_rate(speed, emotion)
-    copy_text = str(segment.get('text', '')).strip()
+    copy_text = str(segment.get('copy_text') or segment.get('text', '')).strip()
     if not copy_text:
         copy_text = ' '
     target_path.parent.mkdir(parents=True, exist_ok=True)
@@ -87,7 +86,7 @@ def _synthesize_with_tone_fallback(segment: Dict[str, Any], target_path: Path) -
     base = _stable_frequency(str(segment.get('character_id', 'unknown')), str(voice_config.get('gender', 'neutral')), str(voice_config.get('tone', '')))
     emotion = str(segment.get('emotion', 'neutral'))
     gain = _emotion_gain(emotion)
-    copy_text = str(segment.get('text', ''))
+    copy_text = str(segment.get('copy_text') or segment.get('text', ''))
     word_pulse = max(2.0, min(7.0, len(copy_text.split()) / max(duration_s, 0.5)))
     pcm_samples: list[int] = []
     for index in range(total_samples):
@@ -162,7 +161,7 @@ def _edge_voice(segment: Dict[str, Any]) -> str:
 
 async def _edge_save_mp3(segment: Dict[str, Any], mp3_path: Path) -> None:
     import edge_tts
-    copy_text = str(segment.get('text', '')).strip() or ' '
+    copy_text = str(segment.get('copy_text') or segment.get('text', '')).strip() or ' '
     communicate = edge_tts.Communicate(text=copy_text, voice=_edge_voice(segment), rate=_edge_rate(segment), pitch=_edge_pitch(segment))
     await communicate.save(str(mp3_path))
 

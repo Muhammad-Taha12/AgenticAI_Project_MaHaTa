@@ -1,0 +1,20 @@
+{
+  "run_status": "success",
+  "timestamp": "2026-05-08T03:14:59.497998",
+  "errors": [],
+  "tools_log": [],
+  "artifact_paths": {
+    "story": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\story.json",
+    "characters": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\characters.json",
+    "script": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\script.json",
+    "phase2_audio_handoff": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\phase2_audio_handoff.json",
+    "phase3_video_handoff": "D:\\Agentic Project\\data\\jobs\\8c673a40b87243b3b12bf46ca94ecac0\\phase1\\phase3_video_handoff.json"
+  },
+  "stats": {
+    "scene_count": 5,
+    "character_count": 6,
+    "total_dialogue_lines": 15,
+    "estimated_total_seconds": 90,
+    "total_audio_segments": 15
+  }
+}

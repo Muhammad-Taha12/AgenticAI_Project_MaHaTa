@@ -49,10 +49,10 @@ def build_phase3_handoff(story: Dict[str, Any], roster: Dict[str, Any], script: 
     for char in roster.get('characters', []):
         for sid in char.get('scenes_appearing_in', []):
             scene_chars.setdefault(sid, []).append(char['character_id'])
-    story_durations: Dict[str, int] = {s['scene_id']: s.get('estimated_duration_seconds', 30) for s in story.get('scenes', [])}
+    story_durations: Dict[str, int] = {(s.get('scene_key') or s.get('scene_id', '')): s.get('estimated_duration_seconds', 30) for s in story.get('scenes', [])}
     scene_visuals: List[Dict[str, Any]] = []
     for ss in script.get('scenes', []):
-        sid = ss['scene_id']
+        sid = ss.get('scene_key') or ss.get('scene_id', '')
         scene_visuals.append({'scene_id': sid, 'visual_prompt': ss.get('visual_prompt', ''), 'negative_prompt': ss.get('negative_visual_prompt', 'blurry, low quality, distorted faces, watermark'), 'camera_movement': ss.get('camera_movement', 'ken_burns'), 'transition_in': ss.get('transition_in', 'fade_in'), 'transition_out': ss.get('transition_out', 'fade_out'), 'duration_seconds': ss.get('estimated_duration_seconds', story_durations.get(sid, 30)), 'character_ids_in_scene': scene_chars.get(sid, [])})
     return {'scenes': scene_visuals, 'character_appearance_prompts': char_prompts, 'global_art_style': roster.get('global_art_style', 'cinematic animation')}
 
@@ -60,11 +60,11 @@ def build_phase2_handoff(story: Dict[str, Any], roster: Dict[str, Any], script: 
     """Constructs phase2_audio_handoff.json from Phase 1 outputs."""
     voice_configs: Dict[str, Any] = {char['character_id']: char['voice_config'] for char in roster.get('characters', [])}
     audio_segments: List[Dict[str, Any]] = []
-    for scene_script in script.get('scenes', []):
-        scene_key = scene_script['scene_id']
+    for i, scene_script in enumerate(script.get('scenes', [])):
+        scene_key = scene_script.get('scene_key') or scene_script.get('scene_id', f'scene_{i+1:03d}')
         for line in scene_script.get('dialogue', []):
-            audio_segments.append({'segment_id': f"{scene_key}_{line['line_id']}", 'scene_id': scene_key, 'character_id': line['character_id'], 'line_id': line['line_id'], 'text': line['text'], 'voice_config': voice_configs.get(line['character_id'], {}), 'timing_offset_seconds': line.get('timing_offset_seconds', 0.0), 'duration_hint_seconds': line.get('duration_hint_seconds', 3.0), 'emotion': line.get('emotion', 'neutral')})
-    music_moods: Dict[str, str] = {s['scene_id']: s.get('background_music_mood', 'neutral') for s in script.get('scenes', [])}
+            audio_segments.append({'segment_id': f"{scene_key}_{line['line_id']}", 'scene_id': scene_key, 'character_id': line['character_id'], 'line_id': line['line_id'], 'text': line.get('copy_text') or line.get('text', ''), 'voice_config': voice_configs.get(line['character_id'], {}), 'timing_offset_seconds': line.get('timing_offset_seconds', 0.0), 'duration_hint_seconds': line.get('duration_hint_seconds', 3.0), 'emotion': line.get('emotion', 'neutral')})
+    music_moods: Dict[str, str] = {(s.get('scene_key') or s.get('scene_id', '')): s.get('background_music_mood', 'neutral') for s in script.get('scenes', [])}
     return {'voice_configs': voice_configs, 'audio_segments': audio_segments, 'music_moods': music_moods, 'total_segments': len(audio_segments)}
 
 def _output_dir() -> Path:

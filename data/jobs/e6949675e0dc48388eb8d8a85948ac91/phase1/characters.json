@@ -1,0 +1,117 @@
+{
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "Detective Emily Windsor",
+      "role": "protagonist",
+      "voice_config": {
+        "gender": "female",
+        "age_range": "young_adult",
+        "tone": "confident_and_analytical",
+        "speed": 1.0,
+        "emotion_baseline": "neutral_with_determination",
+        "accent": "american",
+        "tts_style_tags": [
+          "friendly",
+          "professional"
+        ]
+      },
+      "appearance": {
+        "physical_description": "determined and resourceful young woman with short dark brown hair and piercing green eyes",
+        "clothing": "wire-rimmed glasses perched on the end of her nose",
+        "distinctive_features": "none",
+        "color_palette": [
+          "dark_brown",
+          "green"
+        ],
+        "art_style_prompt": "young woman with red curly hair, wearing a blue astronaut suit, determined expression"
+      },
+      "personality_traits": [
+        "brilliant_and_resourceful",
+        "fiercely_independent"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "none"
+    },
+    {
+      "character_id": "char_002",
+      "name": "Jasper Thompson",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "smooth_and_charming",
+        "speed": 1.0,
+        "emotion_baseline": "neutral_with_amusement",
+        "accent": "american_southern",
+        "tts_style_tags": [
+          "confident",
+          "witty"
+        ]
+      },
+      "appearance": {
+        "physical_description": "charming and laid-back young man with messy blond hair and a scruffy beard",
+        "clothing": "distinctive tattoo of a snake coiled around his right bicep",
+        "distinctive_features": "none",
+        "color_palette": [
+          "blond",
+          "brown"
+        ],
+        "art_style_prompt": "young man with short spiky hair, wearing a black leather jacket, charming smile"
+      },
+      "personality_traits": [
+        "smooth_talking_and_charismatic",
+        "quick_witted"
+      ],
+      "scenes_appearing_in": [
+        "scene_002",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "none"
+    },
+    {
+      "character_id": "char_003",
+      "name": "August Rodriguez",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "female",
+        "age_range": "young_adult",
+        "tone": "quiet_and_introspective",
+        "speed": 1.0,
+        "emotion_baseline": "neutral_with_anxiety",
+        "accent": "american_latinx",
+        "tts_style_tags": [
+          "gentle",
+          "empathetic"
+        ]
+      },
+      "appearance": {
+        "physical_description": "soft-spoken and intelligent young woman with long curly black hair and expressive brown eyes",
+        "clothing": "small tattoo of a sun on her left ankle",
+        "distinctive_features": "none",
+        "color_palette": [
+          "black",
+          "brown"
+        ],
+        "art_style_prompt": "young woman with long curly hair, wearing a white lab coat, quiet expression"
+      },
+      "personality_traits": [
+        "brilliant_and_introspective",
+        "introverted"
+      ],
+      "scenes_appearing_in": [
+        "scene_002",
+        "scene_004"
+      ],
+      "background": "none"
+    }
+  ],
+  "global_art_style": "Studio Ghibli-style watercolour anime"
+}

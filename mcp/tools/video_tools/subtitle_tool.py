@@ -1,4 +1,3 @@
-"""Reworked module for toolkit.video.subtitles.py"""
 from pathlib import Path
 from mcp.base_tool import ToolKernel
 from typing import Any, Dict, List
@@ -27,7 +26,7 @@ def compile_srt_track(timing_manifest: List[Dict], destination: str) -> str:
     for entry in timing_manifest:
         start_tick = int(entry.get('start_ms', 0))
         end_tick = int(entry.get('end_ms', start_tick + 2000))
-        copy_text = entry.get('text', entry.get('dialogue', '')).strip()
+        copy_text = (entry.get('copy_text') or entry.get('text') or entry.get('dialogue', '')).strip()
         character = entry.get('character', '')
         if not copy_text:
             continue

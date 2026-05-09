@@ -1,0 +1,105 @@
+{
+  "scenes": [
+    {
+      "scene_key": "scene_001",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Ah, the map! It's been hidden away for so long.",
+          "emotion": "neutral",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "I think I can decipher the clues. But it won't be easy.",
+          "emotion": "determined",
+          "timing_offset_seconds": 10.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_002",
+          "copy_text": "I think I can decipher the clues. But it won't be easy.",
+          "emotion": "neutral",
+          "timing_offset_seconds": 15.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_004",
+          "character_id": "char_001",
+          "copy_text": "This is it! The treasure chamber!",
+          "emotion": "excited",
+          "timing_offset_seconds": 20.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_005",
+          "character_id": "char_002",
+          "copy_text": "This is it! The treasure chamber!",
+          "emotion": "neutral",
+          "timing_offset_seconds": 25.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_006",
+          "character_id": "char_001",
+          "copy_text": "I never thought I'd find it again.",
+          "emotion": "reflective",
+          "timing_offset_seconds": 30.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_007",
+          "character_id": "char_002",
+          "copy_text": "I never thought I'd find it again.",
+          "emotion": "neutral",
+          "timing_offset_seconds": 35.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_008",
+          "character_id": "char_005",
+          "copy_text": "You'll never stop me!",
+          "emotion": "sneering",
+          "timing_offset_seconds": 40.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_009",
+          "character_id": "char_006",
+          "copy_text": "You'll never stop me!",
+          "emotion": "neutral",
+          "timing_offset_seconds": 45.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_010",
+          "character_id": "char_004",
+          "copy_text": "You're going to be okay.",
+          "emotion": "soft",
+          "timing_offset_seconds": 50.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_011",
+          "character_id": "char_006",
+          "copy_text": "You're going to be okay.",
+          "emotion": "soft",
+          "timing_offset_seconds": 55.0,
+          "duration_hint_seconds": 5.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "mysterious",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 120
+    }
+  ]
+}

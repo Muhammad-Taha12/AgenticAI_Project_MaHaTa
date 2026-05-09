@@ -1,4 +1,3 @@
-"""Reworked module for toolkit.vision.image_generation.py"""
 from pathlib import Path
 from mcp.base_tool import ToolKernel
 from typing import Any, Dict, List, Optional
@@ -106,7 +105,7 @@ class StoryboardTool(ToolKernel):
 
     def execute(self, **kwargs) -> Dict[str, Any]:
         self.validate_inputs(['scene_id', 'visual_prompt', 'output_dir'], kwargs)
-        target_paths = generate_story_frames(scene_id=kwargs['scene_id'], visual_prompt=kwargs['visual_prompt'], negative_prompt=kwargs.get('negative_prompt', ''), tone=kwargs.get('tone', 'neutral'), setting=kwargs.get('setting', ''), num_images=kwargs.get('num_images', 3), output_dir=kwargs['output_dir'], width=kwargs.get('width', 1280), height=kwargs.get('height', 720), use_pollinations=kwargs.get('use_pollinations', True))
+        target_paths = generate_story_frames(scene_key=kwargs['scene_id'], visual_prompt=kwargs['visual_prompt'], negative_prompt=kwargs.get('negative_prompt', ''), tone=kwargs.get('tone', 'neutral'), setting=kwargs.get('setting', ''), num_images=kwargs.get('num_images', 3), destination_dir=kwargs['output_dir'], frame_width=kwargs.get('width', 1280), frame_height=kwargs.get('height', 720), use_pollinations=kwargs.get('use_pollinations', True))
         return {'success': True, 'scene_id': kwargs['scene_id'], 'image_paths': target_paths, 'count': len(target_paths)}
 try:
     from PIL import Image, ImageDraw, ImageEnhance

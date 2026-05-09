@@ -1,0 +1,83 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "visual_prompt": "{'background': {'color': 'brown', 'texture': 'wooden'}, 'objects': [{'type': 'map', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}, {'type': 'magnifying glass', 'size': {'width': 20, 'height': 10}, 'position': {'x': 250, 'y': 120}}], 'characters': [{'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}, {'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}]}",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 15,
+      "character_ids_in_scene": [
+        "char_001"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "visual_prompt": "{'background': {'color': 'green', 'texture': 'forest'}, 'objects': [{'type': 'map', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}, {'type': 'bridge', 'size': {'width': 20, 'height': 10}, 'position': {'x': 250, 'y': 120}}], 'characters': [{'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}, {'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}]}",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 20,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_006"
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "visual_prompt": "{'background': {'color': 'blue', 'texture': 'water'}, 'objects': [{'type': 'bridge', 'size': {'width': 20, 'height': 10}, 'position': {'x': 200, 'y': 150}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}], 'characters': [{'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 400, 'y': 100}}]}",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 18,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_003",
+        "char_004"
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "visual_prompt": "{'background': {'color': 'gold', 'texture': 'jewels'}, 'objects': [{'type': 'treasure', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}], 'characters': [{'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 400, 'y': 100}}]}",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 25,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_003",
+        "char_005"
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "visual_prompt": "{'background': {'color': 'blue', 'texture': 'water'}, 'objects': [{'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 300, 'y': 100}}, {'type': 'map', 'size': {'width': 100, 'height': 50}, 'position': {'x': 200, 'y': 150}}], 'characters': [{'type': 'person', 'size': {'width': 20, 'height': 10}, 'position': {'x': 350, 'y': 120}}, {'type': 'person', 'size': {'width': 50, 'height': 30}, 'position': {'x': 400, 'y': 100}}]}",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 12,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_004",
+        "char_005",
+        "char_006"
+      ]
+    }
+  ],
+  "character_appearance_prompts": {
+    "char_001": "young man with short brown hair, wearing a fedora and carrying a magnifying glass, determined expression.",
+    "char_002": "petite girl with curly blonde hair, wearing a bright yellow sundress, playful expression.",
+    "char_003": "elderly man with a long white beard, wearing a pair of glasses and a tweed jacket, serious expression.",
+    "char_004": "tall, muscular man with a black leather jacket and sunglasses, menacing expression.",
+    "char_005": "young woman with long brown hair, wearing a white dress and carrying a small purse, emotional expression.",
+    "char_006": "young man with short blonde hair, wearing a bright orange jumpsuit and carrying a backpack, enthusiastic expression."
+  },
+  "global_art_style": "Studio Ghibli-style watercolour anime"
+}

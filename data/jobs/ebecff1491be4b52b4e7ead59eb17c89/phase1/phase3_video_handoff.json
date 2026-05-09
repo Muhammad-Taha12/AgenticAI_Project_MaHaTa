@@ -1,0 +1,66 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "static",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 15,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 20,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "zoom_in",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 25,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_right",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 30,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    }
+  ],
+  "character_appearance_prompts": {
+    "char_001": "young man with short brown hair, piercing blue eyes, rugged expression",
+    "char_002": "young woman with long black hair, expressive brown eyes, glasses",
+    "char_003": "young man with short spiky black hair, mischievous grin, sleek black jacket"
+  },
+  "global_art_style": "Studio Ghibli-style watercolour anime"
+}

@@ -1,0 +1,19 @@
+{
+  "job_id": "e6949675e0dc48388eb8d8a85948ac91",
+  "prompt": "A detective finds a hidden treasure.",
+  "status": "failed",
+  "current_phase": null,
+  "phases": {
+    "1": "running",
+    "2": "pending",
+    "3": "pending"
+  },
+  "progress": 10,
+  "message": "'scene_id'",
+  "errors": [
+    "'scene_id'"
+  ],
+  "outputs": {},
+  "created_at": "2026-05-07T15:03:12Z",
+  "updated_at": "2026-05-07T15:36:13Z"
+}

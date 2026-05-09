@@ -6,7 +6,7 @@ class ScriptOutput(BaseModel):
     scenes: List[SceneScript] = Field(description='Ordered script for every scene in the story')
 
 class SceneScript(BaseModel):
-    scene_key: str = Field(description='Must match a scene_id from StoryOutput')
+    scene_key: str = Field(description='Must match a scene_key from StoryOutput, e.g. scene_001')
     dialogue: List[DialogueLine] = Field(description='All dialogue lines for this scene in chronological order')
     visual_prompt: str = Field(description='Detailed image-generation prompt for this scene (50-150 words)')
     negative_visual_prompt: str = Field(default='blurry, low quality, distorted faces, watermark, text overlay, extra limbs', description='Elements to exclude from image generation')

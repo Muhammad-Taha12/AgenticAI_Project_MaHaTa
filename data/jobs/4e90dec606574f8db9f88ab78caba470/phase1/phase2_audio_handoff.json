@@ -1,0 +1,282 @@
+{
+  "voice_configs": {
+    "char_001": {
+      "gender": "male",
+      "age_range": "adult",
+      "tone": "determined",
+      "speed": 0.5,
+      "emotion_baseline": "neutral",
+      "accent": "none",
+      "tts_style_tags": [
+        "informative",
+        "conversational"
+      ]
+    },
+    "char_002": {
+      "gender": "female",
+      "age_range": "young_adult",
+      "tone": "friendly",
+      "speed": 1.0,
+      "emotion_baseline": "positive",
+      "accent": "indian",
+      "tts_style_tags": [
+        "engaging",
+        "scientific"
+      ]
+    },
+    "char_003": {
+      "gender": "male",
+      "age_range": "adult",
+      "tone": "smooth",
+      "speed": 0.5,
+      "emotion_baseline": "confident",
+      "accent": "american",
+      "tts_style_tags": [
+        "suave",
+        "persuasive"
+      ]
+    },
+    "char_004": {
+      "gender": "female",
+      "age_range": "young_adult",
+      "tone": "playful",
+      "speed": 1.0,
+      "emotion_baseline": "excited",
+      "accent": "none",
+      "tts_style_tags": [
+        "spontaneous",
+        "energetic"
+      ]
+    }
+  },
+  "audio_segments": [
+    {
+      "segment_id": "scene_001_line_001",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I have to find that treasure! ",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 2.5,
+      "emotion": "EXCITED"
+    },
+    {
+      "segment_id": "scene_001_line_002",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "It's been years since I last saw it.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 3.0,
+      "duration_hint_seconds": 4.0,
+      "emotion": "REFLECTIVE"
+    },
+    {
+      "segment_id": "scene_002_line_001",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I have to follow the map.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 2.5,
+      "emotion": "EXCITED"
+    },
+    {
+      "segment_id": "scene_002_line_002",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "The forest is dense and treacherous.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 3.0,
+      "duration_hint_seconds": 4.0,
+      "emotion": "CAUTIOUS"
+    },
+    {
+      "segment_id": "scene_003_line_001",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I think I've found the entrance.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 2.5,
+      "emotion": "ANTICIPATORY"
+    },
+    {
+      "segment_id": "scene_003_line_002",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "The air is musty and filled with age.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 3.0,
+      "duration_hint_seconds": 4.0,
+      "emotion": "INTRiguING"
+    },
+    {
+      "segment_id": "scene_004_line_001",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I see ancient artifacts and symbols.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 2.5,
+      "emotion": "INTRiguING"
+    },
+    {
+      "segment_id": "scene_004_line_002",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "There's a hidden message.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 3.0,
+      "duration_hint_seconds": 4.0,
+      "emotion": "EXCITED"
+    },
+    {
+      "segment_id": "scene_005_line_001",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I've uncovered the treasure's secret.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 2.5,
+      "emotion": "REFLECTIVE"
+    },
+    {
+      "segment_id": "scene_005_line_002",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "It's more than just gold and jewels.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "none",
+        "tts_style_tags": [
+          "informative",
+          "conversational"
+        ]
+      },
+      "timing_offset_seconds": 3.0,
+      "duration_hint_seconds": 4.0,
+      "emotion": "INTELLECTUAL"
+    }
+  ],
+  "music_moods": {
+    "scene_001": "Mysterious",
+    "scene_002": "Exciting",
+    "scene_003": "Anticipatory",
+    "scene_004": "Intriguing",
+    "scene_005": "Reflective"
+  },
+  "total_segments": 10
+}

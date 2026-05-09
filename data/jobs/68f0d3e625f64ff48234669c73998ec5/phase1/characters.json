@@ -1,0 +1,161 @@
+{
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "Kaito",
+      "role": "protagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "appearance": {
+        "physical_description": "young man with short, spiky black hair, piercing brown eyes, athletic build",
+        "clothing": "black leather jacket, dark jeans, scuffed up combat boots",
+        "distinctive_features": "scars on his cheeks from a childhood accident",
+        "color_palette": [
+          "#333333",
+          "#454545",
+          "#666666"
+        ],
+        "art_style_prompt": "young man with short, spiky black hair, wearing a black leather jacket, determined expression"
+      },
+      "personality_traits": [
+        "determined",
+        "loyal",
+        "protective"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "son of a yakuza family leader, seeks to prove himself as a worthy successor"
+    },
+    {
+      "character_id": "char_002",
+      "name": "Akira",
+      "role": "antagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "cold",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "menacing"
+        ]
+      },
+      "appearance": {
+        "physical_description": "tall, lean man with slicked-back black hair, piercing blue eyes, sharp jawline",
+        "clothing": "black suit, white shirt, black tie",
+        "distinctive_features": "a silver earring in the shape of a snake",
+        "color_palette": [
+          "#333333",
+          "#454545",
+          "#666666"
+        ],
+        "art_style_prompt": "tall man with slicked-back black hair, wearing a black suit, cold expression"
+      },
+      "personality_traits": [
+        "cold",
+        "ambitious",
+        "cunning"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004"
+      ],
+      "background": "Kaito's older brother, leader of a rival yakuza family"
+    },
+    {
+      "character_id": "char_003",
+      "name": "Taro",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "wise",
+        "speed": 1.0,
+        "emotion_baseline": "calm",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "soothing",
+          "authoritative"
+        ]
+      },
+      "appearance": {
+        "physical_description": "older man with thinning grey hair, warm brown eyes, gentle smile",
+        "clothing": "traditional Japanese kimono",
+        "distinctive_features": "a wooden cane in his hand",
+        "color_palette": [
+          "#666666",
+          "#888888",
+          "#999999"
+        ],
+        "art_style_prompt": "older man with thinning grey hair, wearing a traditional Japanese kimono, wise expression"
+      },
+      "personality_traits": [
+        "wise",
+        "compassionate",
+        "respected"
+      ],
+      "scenes_appearing_in": [
+        "scene_002",
+        "scene_005"
+      ],
+      "background": "Kaito's father's closest friend and mentor"
+    },
+    {
+      "character_id": "char_004",
+      "name": "Lila",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "female",
+        "age_range": "young_adult",
+        "tone": "emotional",
+        "speed": 1.0,
+        "emotion_baseline": "excited",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "upbeat",
+          "enthusiastic"
+        ]
+      },
+      "appearance": {
+        "physical_description": "young woman with short, spiky pink hair, bright brown eyes, energetic smile",
+        "clothing": "youthful fashion",
+        "distinctive_features": "a colorful tattoo on her left arm",
+        "color_palette": [
+          "#FF69B4",
+          "#33CC33",
+          "#666666"
+        ],
+        "art_style_prompt": "young woman with short, spiky pink hair, wearing youthful fashion, excited expression"
+      },
+      "personality_traits": [
+        "emotional",
+        "enthusiastic",
+        "optimistic"
+      ],
+      "scenes_appearing_in": [
+        "scene_005"
+      ],
+      "background": "Kaito's childhood friend and confidant"
+    }
+  ],
+  "global_art_style": "Studio Ghibli-style watercolour anime"
+}

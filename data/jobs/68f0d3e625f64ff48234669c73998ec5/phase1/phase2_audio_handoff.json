@@ -1,0 +1,326 @@
+{
+  "voice_configs": {
+    "char_001": {
+      "gender": "male",
+      "age_range": "young_adult",
+      "tone": "determined",
+      "speed": 1.0,
+      "emotion_baseline": "neutral",
+      "accent": "Japanese",
+      "tts_style_tags": [
+        "calm",
+        "assertive"
+      ]
+    },
+    "char_002": {
+      "gender": "male",
+      "age_range": "young_adult",
+      "tone": "cold",
+      "speed": 1.0,
+      "emotion_baseline": "neutral",
+      "accent": "Japanese",
+      "tts_style_tags": [
+        "calm",
+        "menacing"
+      ]
+    },
+    "char_003": {
+      "gender": "male",
+      "age_range": "adult",
+      "tone": "wise",
+      "speed": 1.0,
+      "emotion_baseline": "calm",
+      "accent": "Japanese",
+      "tts_style_tags": [
+        "soothing",
+        "authoritative"
+      ]
+    },
+    "char_004": {
+      "gender": "female",
+      "age_range": "young_adult",
+      "tone": "emotional",
+      "speed": 1.0,
+      "emotion_baseline": "excited",
+      "accent": "Japanese",
+      "tts_style_tags": [
+        "upbeat",
+        "enthusiastic"
+      ]
+    }
+  },
+  "audio_segments": [
+    {
+      "segment_id": "scene_001_line_001",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "You killed our father!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Angry"
+    },
+    {
+      "segment_id": "scene_001_line_002",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "I will never forgive you!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "Sad"
+    },
+    {
+      "segment_id": "scene_001_line_003",
+      "scene_id": "scene_001",
+      "character_id": "char_002",
+      "line_id": "line_003",
+      "text": "What's going on here?",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "cold",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "menacing"
+        ]
+      },
+      "timing_offset_seconds": 15.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "Curious"
+    },
+    {
+      "segment_id": "scene_002_line_001",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "I remember the day our father passed away...",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Nostalgic"
+    },
+    {
+      "segment_id": "scene_002_line_002",
+      "scene_id": "scene_002",
+      "character_id": "char_002",
+      "line_id": "line_002",
+      "text": "You were always so close to him.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "cold",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "menacing"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Wistful"
+    },
+    {
+      "segment_id": "scene_003_line_001",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "This is it, the proof I've been searching for.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Determined"
+    },
+    {
+      "segment_id": "scene_003_line_002",
+      "scene_id": "scene_003",
+      "character_id": "char_002",
+      "line_id": "line_002",
+      "text": "I see why you did what you did.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "cold",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "menacing"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Understanding"
+    },
+    {
+      "segment_id": "scene_004_line_001",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Why did you do it, Akira?!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Angry"
+    },
+    {
+      "segment_id": "scene_004_line_002",
+      "scene_id": "scene_004",
+      "character_id": "char_002",
+      "line_id": "line_002",
+      "text": "I just wanted to be in control.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "cold",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "menacing"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Cold"
+    },
+    {
+      "segment_id": "scene_005_line_001",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Thank you, Taro-san.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "determined",
+        "speed": 1.0,
+        "emotion_baseline": "neutral",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "calm",
+          "assertive"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Grateful"
+    },
+    {
+      "segment_id": "scene_005_line_002",
+      "scene_id": "scene_005",
+      "character_id": "char_003",
+      "line_id": "line_002",
+      "text": "And thank you, Kaito-chan.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "wise",
+        "speed": 1.0,
+        "emotion_baseline": "calm",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "soothing",
+          "authoritative"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Happy"
+    },
+    {
+      "segment_id": "scene_005_line_003",
+      "scene_id": "scene_005",
+      "character_id": "char_004",
+      "line_id": "line_003",
+      "text": "We'll get through this together!",
+      "voice_config": {
+        "gender": "female",
+        "age_range": "young_adult",
+        "tone": "emotional",
+        "speed": 1.0,
+        "emotion_baseline": "excited",
+        "accent": "Japanese",
+        "tts_style_tags": [
+          "upbeat",
+          "enthusiastic"
+        ]
+      },
+      "timing_offset_seconds": 20.0,
+      "duration_hint_seconds": 15.0,
+      "emotion": "Optimistic"
+    }
+  ],
+  "music_moods": {
+    "scene_001": "Ominous",
+    "scene_002": "Melancholic",
+    "scene_003": "Intense",
+    "scene_004": "Desperate",
+    "scene_005": "Hopeful"
+  },
+  "total_segments": 12
+}

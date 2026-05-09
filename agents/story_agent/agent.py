@@ -76,7 +76,7 @@ if __name__ == '__main__':
         chars = outcome['characters']
         script = outcome['script']
         print('\n[OK] Phase 1 complete!')
-        print(f"  Story  : {story['title']} ({story['genre']})")
+        print(f"  Story  : {story.get('headline') or story.get('title', 'Untitled')} ({story.get('genre', '')})")
         print(f"  Premise: {story['premise']}")
         print(f"  Scenes : {len(story['scenes'])}  (~{story['total_estimated_duration_seconds']}s)")
         print(f"  Cast   : {len(chars['characters'])} characters")

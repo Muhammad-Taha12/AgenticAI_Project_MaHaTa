@@ -1,0 +1,373 @@
+{
+  "job_id": "eba7737dcbd34f91970453dab3a1be0f",
+  "prompt": "A detective finds a hidden treasure.",
+  "status": "failed",
+  "current_phase": null,
+  "phases": {
+    "1": "completed",
+    "2": "running",
+    "3": "pending"
+  },
+  "progress": 45,
+  "message": "Invalid Phase 2 handoff: 22 validation errors for Phase2AudioHandoff\naudio_segments.0.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_001...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.0.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_001...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.1.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.1.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.2.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.2.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.3.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.3.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.4.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.4.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.5.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.5.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.6.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.6.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.7.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_004...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.7.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_004...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.8.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.8.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.9.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.9.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.10.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.10.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing",
+  "errors": [
+    "Invalid Phase 2 handoff: 22 validation errors for Phase2AudioHandoff\naudio_segments.0.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_001...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.0.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_001...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.1.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.1.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.2.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.2.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.3.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.3.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_002...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.4.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.4.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.5.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.5.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_003...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.6.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.6.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.7.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_004...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.7.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_004...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.8.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.8.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_004... 'emotion': 'sarcastic'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.9.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.9.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.10.scene_key\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing\naudio_segments.10.copy_text\n  Field required [type=missing, input_value={'segment_id': 'scene_005...0, 'emotion': 'neutral'}, input_type=dict]\n    For further information visit https://errors.pydantic.dev/2.13/v/missing"
+  ],
+  "outputs": {
+    "phase1": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1",
+      "artifacts": {
+        "story": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1\\story.json",
+        "characters": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1\\characters.json",
+        "script": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1\\script.json",
+        "phase2_audio_handoff": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1\\phase2_audio_handoff.json",
+        "phase3_video_handoff": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1\\phase3_video_handoff.json",
+        "summary": "D:\\Agentic Project\\data\\jobs\\eba7737dcbd34f91970453dab3a1be0f\\phase1\\summary.json"
+      },
+      "story": {
+        "headline": "The Detective's Treasure",
+        "genre": "Adventure, Mystery",
+        "themes": [
+          "Perseverance",
+          "Curiosity"
+        ],
+        "arc": [
+          "intro",
+          "rising_action",
+          "climax",
+          "falling_action",
+          "resolution"
+        ],
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "headline": "The Mysterious Map",
+            "setting": "A dimly lit, dusty attic. Old trunks and forgotten memories surround the detective.",
+            "tone": "Mysterious",
+            "arc_position": "intro",
+            "summary": "The detective discovers an old map that supposedly leads to a hidden treasure.",
+            "estimated_duration_seconds": 15,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_002",
+            "headline": "Following the Trail",
+            "setting": "A dense, misty forest. The detective follows the map's cryptic clues.",
+            "tone": "Suspenseful",
+            "arc_position": "rising_action",
+            "summary": "The detective navigates through the treacherous terrain, overcoming obstacles and deciphering riddles.",
+            "estimated_duration_seconds": 30,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_003",
+            "headline": "The Treasure Chamber",
+            "setting": "A hidden underground cave. The treasure lies within.",
+            "tone": "Exciting",
+            "arc_position": "climax",
+            "summary": "The detective finally reaches the treasure chamber, but finds it guarded by a mysterious figure.",
+            "estimated_duration_seconds": 20,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_004",
+            "headline": "The Unexpected Twist",
+            "setting": "The same underground cave. The detective confronts the guardian.",
+            "tone": "Surprising",
+            "arc_position": "falling_action",
+            "summary": "The guardian reveals a surprising connection to the detective's past, forcing them to reevaluate their motivations.",
+            "estimated_duration_seconds": 25,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_005",
+            "headline": "The Treasure Revealed",
+            "setting": "The same underground cave. The treasure is finally within reach.",
+            "tone": "Satisfying",
+            "arc_position": "resolution",
+            "summary": "The detective claims the treasure, but realizes that its true value lies in the journey itself.",
+            "estimated_duration_seconds": 20,
+            "themes": []
+          }
+        ],
+        "total_estimated_duration_seconds": 110,
+        "premise": "",
+        "setting_description": ""
+      },
+      "characters": {
+        "characters": [
+          {
+            "character_id": "char_001",
+            "name": "The Detective",
+            "role": "protagonist",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "young_adult",
+              "tone": "determined",
+              "speed": 1.0,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "friendly"
+              ]
+            },
+            "appearance": {
+              "physical_description": "Studio Ghibli-style watercolour anime. Young woman with short, dark hair, wearing a worn leather jacket and carrying a magnifying glass.",
+              "clothing": "worn leather jacket, jeans, boots",
+              "distinctive_features": "none",
+              "color_palette": [
+                "dark brown",
+                "black",
+                "gray"
+              ],
+              "art_style_prompt": "young woman with red curly hair, wearing a blue astronaut suit, determined expression"
+            },
+            "personality_traits": [
+              "curious",
+              "analytical"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004",
+              "scene_005"
+            ],
+            "background": "none"
+          },
+          {
+            "character_id": "char_002",
+            "name": "The Mentor",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "witty",
+              "speed": 1.0,
+              "emotion_baseline": "sarcastic",
+              "accent": "British",
+              "tts_style_tags": [
+                "dry"
+              ]
+            },
+            "appearance": {
+              "physical_description": "3D Pixar-style CGI. Tall, slender man with messy brown hair and a bushy beard, wearing a rumpled suit and carrying a backpack.",
+              "clothing": "rumpled suit, tie, glasses",
+              "distinctive_features": "messy brown hair, bushy beard",
+              "color_palette": [
+                "brown",
+                "gray",
+                "blue"
+              ],
+              "art_style_prompt": "tall man with messy brown hair, wearing a rumpled suit and carrying a backpack"
+            },
+            "personality_traits": [
+              "quick-witted",
+              "sarcastic"
+            ],
+            "scenes_appearing_in": [
+              "scene_002",
+              "scene_004"
+            ],
+            "background": "none"
+          },
+          {
+            "character_id": "char_003",
+            "name": "The Child",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "female",
+              "age_range": "child",
+              "tone": "shy",
+              "speed": 1.0,
+              "emotion_baseline": "timid",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "sweet"
+              ]
+            },
+            "appearance": {
+              "physical_description": "2D flat-design cartoon. Young girl with bright pink hair and a shy expression, wearing a white dress and carrying a stuffed animal.",
+              "clothing": "white dress, pink hair clips",
+              "distinctive_features": "bright pink hair",
+              "color_palette": [
+                "pink",
+                "white",
+                "light blue"
+              ],
+              "art_style_prompt": "young girl with bright pink hair, wearing a white dress and carrying a stuffed animal"
+            },
+            "personality_traits": [
+              "shy",
+              "timid"
+            ],
+            "scenes_appearing_in": [
+              "scene_004"
+            ],
+            "background": "none"
+          }
+        ],
+        "global_art_style": "Studio Ghibli-style watercolour anime"
+      },
+      "script": {
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I've been searching for this map for years.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "ken_burns",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "mysterious",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 15
+          },
+          {
+            "scene_key": "scene_002",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "This forest is full of secrets.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "I need to stay focused if I want to find the treasure.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_001",
+                "copy_text": "But what if I'm not meant to find it?",
+                "emotion": "neutral",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 10.0
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "ken_burns",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "suspenseful",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 30
+          },
+          {
+            "scene_key": "scene_003",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I've finally found it.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "The treasure is hidden behind this door.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "ken_burns",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "exciting",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 20
+          },
+          {
+            "scene_key": "scene_004",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_002",
+                "copy_text": "Ah, the treasure of the ancient ones.",
+                "emotion": "sarcastic",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "What do you mean?",
+                "emotion": "neutral",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_003",
+                "character_id": "char_002",
+                "copy_text": "You're the descendant of the treasure's original owner.",
+                "emotion": "sarcastic",
+                "timing_offset_seconds": 15.0,
+                "duration_hint_seconds": 10.0
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "ken_burns",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "surprising",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 25
+          },
+          {
+            "scene_key": "scene_005",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I see. Well, in that case...",
+                "emotion": "neutral",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 5.0
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "The treasure is yours.",
+                "emotion": "neutral",
+                "timing_offset_seconds": 10.0,
+                "duration_hint_seconds": 5.0
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "ken_burns",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "satisfying",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 20
+          }
+        ]
+      }
+    }
+  },
+  "created_at": "2026-05-07T16:22:09Z",
+  "updated_at": "2026-05-07T16:51:24Z"
+}

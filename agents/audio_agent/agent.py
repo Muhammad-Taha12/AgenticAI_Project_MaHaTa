@@ -49,20 +49,20 @@ def execute_phase_two(handoff: str | Path | Dict[str, Any] | Phase2AudioHandoff,
         start_tick = int(float(segment['timing_offset_seconds']) * 1000)
         span_ms = int(float(tts_output['duration_seconds']) * 1000)
         end_tick = start_tick + span_ms
-        segment_record = {'segment_id': segment['segment_id'], 'scene_id': segment.get('scene_key') or segment.get('scene_id', ''), 'character_id': segment['character_id'], 'line_id': segment['line_id'], 'text': segment['text'], 'emotion': segment['emotion'], 'audio_file': tts_output['audio_file'], 'start_ms': start_tick, 'end_ms': end_tick, 'duration_ms': span_ms, 'provider': tts_output['provider']}
+        segment_record = {'segment_id': segment['segment_id'], 'scene_id': segment.get('scene_key') or segment.get('scene_id', ''), 'character_id': segment['character_id'], 'line_id': segment['line_id'], 'text': segment.get('copy_text') or segment.get('text', ''), 'emotion': segment['emotion'], 'audio_file': tts_output['audio_file'], 'start_ms': start_tick, 'end_ms': end_tick, 'duration_ms': span_ms, 'provider': tts_output['provider']}
         speech_entries.append(segment_record)
         timeline_entries.append(segment_record)
     scene_mix_entries: list[Dict[str, Any]] = []
     music_entries: list[Dict[str, Any]] = []
     for scene_key in collect_scene_keys(raw_segments):
-        scene_segments = [item for item in speech_entries if (item.get('scene_key') or item.get('scene_id')) == scene_key]
+        scene_segments = [item for item in speech_entries if item.get('scene_id') == scene_key]
         scene_duration = max((item['end_ms'] for item in scene_segments), default=1000) / 1000.0 + 0.5
         layers: list[Dict[str, Any]] = [{'audio_file': item['audio_file'], 'start_seconds': item['start_ms'] / 1000.0} for item in scene_segments]
         if include_bgm:
-            bgm = compose_bed_track(scene_id=scene_key, mood=audio_handoff.music_moods.get(scene_key, 'neutral'), duration_seconds=scene_duration, output_dir=bgm_dir)
+            bgm = compose_bed_track(scene_key=scene_key, mood=audio_handoff.music_moods.get(scene_key, 'neutral'), duration_s=scene_duration, destination_dir=bgm_dir)
             music_entries.append(bgm)
             layers.insert(0, {'audio_file': bgm['audio_file'], 'start_seconds': 0.0})
-        scene_mix = mix_audio_layers(tracks=layers, output_path=scenes_dir / f'{scene_key}_mix.wav', duration_seconds=scene_duration)
+        scene_mix = mix_audio_layers(layers=layers, destination=scenes_dir / f'{scene_key}_mix.wav', duration_s=scene_duration)
         scene_mix_entries.append({'scene_id': scene_key, **scene_mix})
     full_audio = concat_audio_files([layer['audio_file'] for layer in scene_mix_entries], run_dir / 'full_audio.wav')
     manifest = {'phase': 'phase2_audio', 'run_status': 'success', 'output_dir': str(run_dir), 'segments': timeline_entries, 'scene_mix_rows': scene_mix_entries, 'music_rows': music_entries, 'full_audio': full_audio, 'total_segments': len(timeline_entries), 'total_duration_ms': int(float(full_audio['duration_seconds']) * 1000)}
