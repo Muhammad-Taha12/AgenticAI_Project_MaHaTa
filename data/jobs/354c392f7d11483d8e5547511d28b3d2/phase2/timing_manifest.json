@@ -1,0 +1,402 @@
+{
+  "phase": "phase2_audio",
+  "run_status": "success",
+  "output_dir": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2",
+  "segments": [
+    {
+      "segment_id": "scene_001_line_001",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Captain Blackbeak stands tall, his piercing blue eyes fixed on the horizon.",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_001_line_001.wav",
+      "start_ms": 0,
+      "end_ms": 5064,
+      "duration_ms": 5064,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_001_line_002",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "The ocean stretches out before me, a vast expanse of blue and green.",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_001_line_002.wav",
+      "start_ms": 5000,
+      "end_ms": 9776,
+      "duration_ms": 4776,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_001_line_003",
+      "scene_id": "scene_001",
+      "character_id": "char_002",
+      "line_id": "line_003",
+      "text": "Ah, Captain Blackbeak! Ready to set sail?",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_001_line_003.wav",
+      "start_ms": 10000,
+      "end_ms": 14511,
+      "duration_ms": 4511,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_001_line_004",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_004",
+      "text": "Aye, Barnaby! Let's hoist the sails and catch the wind!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_001_line_004.wav",
+      "start_ms": 5000,
+      "end_ms": 10280,
+      "duration_ms": 5280,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_001_line_005",
+      "scene_id": "scene_001",
+      "character_id": "char_002",
+      "line_id": "line_005",
+      "text": "Aye aye, Captain!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_001_line_005.wav",
+      "start_ms": 5000,
+      "end_ms": 7376,
+      "duration_ms": 2376,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_002_line_001",
+      "scene_id": "scene_002",
+      "character_id": "char_003",
+      "line_id": "line_001",
+      "text": "Captain Redbeard sneers at Captain Blackbeak, his wild red hair a testament to his fury.",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_002_line_001.wav",
+      "start_ms": 0,
+      "end_ms": 6600,
+      "duration_ms": 6600,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_002_line_002",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "You'll never take me alive, Redbeard!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_002_line_002.wav",
+      "start_ms": 5000,
+      "end_ms": 8264,
+      "duration_ms": 3264,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_002_line_003",
+      "scene_id": "scene_002",
+      "character_id": "char_003",
+      "line_id": "line_003",
+      "text": "We'll see about that, Blackbeak!",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_002_line_003.wav",
+      "start_ms": 5000,
+      "end_ms": 8191,
+      "duration_ms": 3191,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_002_line_004",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_004",
+      "text": "Prepare to meet your maker, Redbeard!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_002_line_004.wav",
+      "start_ms": 5000,
+      "end_ms": 8240,
+      "duration_ms": 3240,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_002_line_005",
+      "scene_id": "scene_002",
+      "character_id": "char_003",
+      "line_id": "line_005",
+      "text": "You'll never defeat me!",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_002_line_005.wav",
+      "start_ms": 5000,
+      "end_ms": 7328,
+      "duration_ms": 2328,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_003_line_001",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "The battle rages on, cannons blazing as the two ships clash in a frenzy of steel and fire.",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_003_line_001.wav",
+      "start_ms": 0,
+      "end_ms": 6048,
+      "duration_ms": 6048,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_003_line_002",
+      "scene_id": "scene_003",
+      "character_id": "char_003",
+      "line_id": "line_002",
+      "text": "You'll never win, Blackbeak!",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_003_line_002.wav",
+      "start_ms": 5000,
+      "end_ms": 7976,
+      "duration_ms": 2976,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_003_line_003",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "We'll see about that, Redbeard!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_003_line_003.wav",
+      "start_ms": 5000,
+      "end_ms": 7904,
+      "duration_ms": 2904,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_003_line_004",
+      "scene_id": "scene_003",
+      "character_id": "char_003",
+      "line_id": "line_004",
+      "text": "Prepare to meet your maker, Blackbeak!",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_003_line_004.wav",
+      "start_ms": 5000,
+      "end_ms": 8456,
+      "duration_ms": 3456,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_003_line_005",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_005",
+      "text": "I'll never yield!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_003_line_005.wav",
+      "start_ms": 5000,
+      "end_ms": 7064,
+      "duration_ms": 2064,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_004_line_001",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Captain Blackbeak faces off against Captain Redbeard, their swords locked in a fierce duel.",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_004_line_001.wav",
+      "start_ms": 0,
+      "end_ms": 5856,
+      "duration_ms": 5856,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_004_line_002",
+      "scene_id": "scene_004",
+      "character_id": "char_003",
+      "line_id": "line_002",
+      "text": "You'll never defeat me, Blackbeak!",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_004_line_002.wav",
+      "start_ms": 5000,
+      "end_ms": 8264,
+      "duration_ms": 3264,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_004_line_003",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "I'll never yield!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_004_line_003.wav",
+      "start_ms": 5000,
+      "end_ms": 7064,
+      "duration_ms": 2064,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_004_line_004",
+      "scene_id": "scene_004",
+      "character_id": "char_003",
+      "line_id": "line_004",
+      "text": "Prepare to meet your maker, Blackbeak!",
+      "emotion": "negative",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_004_line_004.wav",
+      "start_ms": 5000,
+      "end_ms": 8456,
+      "duration_ms": 3456,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_004_line_005",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_005",
+      "text": "I'll never back down!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_004_line_005.wav",
+      "start_ms": 5000,
+      "end_ms": 7280,
+      "duration_ms": 2280,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_005_line_001",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Captain Blackbeak emerges victorious, but at a great cost: his trusted first mate has betrayed him.",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_005_line_001.wav",
+      "start_ms": 0,
+      "end_ms": 6624,
+      "duration_ms": 6624,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_005_line_002",
+      "scene_id": "scene_005",
+      "character_id": "char_005",
+      "line_id": "line_002",
+      "text": "I'm so sorry, Captain Blackbeak!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_005_line_002.wav",
+      "start_ms": 5000,
+      "end_ms": 7976,
+      "duration_ms": 2976,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_005_line_003",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "It's not your fault, Barnaby!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_005_line_003.wav",
+      "start_ms": 5000,
+      "end_ms": 7880,
+      "duration_ms": 2880,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_005_line_004",
+      "scene_id": "scene_005",
+      "character_id": "char_005",
+      "line_id": "line_004",
+      "text": "I'll always stand by you, Captain!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_005_line_004.wav",
+      "start_ms": 5000,
+      "end_ms": 7808,
+      "duration_ms": 2808,
+      "provider": "edge_tts"
+    },
+    {
+      "segment_id": "scene_005_line_005",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_005",
+      "text": "Thank you, Barnaby!",
+      "emotion": "positive",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\segments\\scene_005_line_005.wav",
+      "start_ms": 5000,
+      "end_ms": 7376,
+      "duration_ms": 2376,
+      "provider": "edge_tts"
+    }
+  ],
+  "scene_mix_rows": [
+    {
+      "scene_id": "scene_001",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\scenes\\scene_001_mix.wav",
+      "duration_seconds": 15.010975056689343
+    },
+    {
+      "scene_id": "scene_002",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\scenes\\scene_002_mix.wav",
+      "duration_seconds": 8.763990929705216
+    },
+    {
+      "scene_id": "scene_003",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\scenes\\scene_003_mix.wav",
+      "duration_seconds": 8.955963718820861
+    },
+    {
+      "scene_id": "scene_004",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\scenes\\scene_004_mix.wav",
+      "duration_seconds": 8.955963718820861
+    },
+    {
+      "scene_id": "scene_005",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\scenes\\scene_005_mix.wav",
+      "duration_seconds": 8.475963718820863
+    }
+  ],
+  "music_rows": [
+    {
+      "scene_id": "scene_001",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\bgm\\scene_001_bgm.wav",
+      "duration_seconds": 15.011,
+      "mood": "calm",
+      "provider": "offline_procedural_bgm"
+    },
+    {
+      "scene_id": "scene_002",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\bgm\\scene_002_bgm.wav",
+      "duration_seconds": 8.764,
+      "mood": "intense",
+      "provider": "offline_procedural_bgm"
+    },
+    {
+      "scene_id": "scene_003",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\bgm\\scene_003_bgm.wav",
+      "duration_seconds": 8.956,
+      "mood": "intense",
+      "provider": "offline_procedural_bgm"
+    },
+    {
+      "scene_id": "scene_004",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\bgm\\scene_004_bgm.wav",
+      "duration_seconds": 8.956,
+      "mood": "dramatic",
+      "provider": "offline_procedural_bgm"
+    },
+    {
+      "scene_id": "scene_005",
+      "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\bgm\\scene_005_bgm.wav",
+      "duration_seconds": 8.475999999999999,
+      "mood": "emotional",
+      "provider": "offline_procedural_bgm"
+    }
+  ],
+  "full_audio": {
+    "audio_file": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase2\\full_audio.wav",
+    "duration_seconds": 50.16285714285714
+  },
+  "total_segments": 25,
+  "total_duration_ms": 50162
+}

@@ -1,0 +1,453 @@
+{
+  "job_id": "cb7cdfe7f33c4d339dfdad0f1aeba5a6",
+  "prompt": "A street racer gets caught by the police and escapes prison.",
+  "status": "completed",
+  "current_phase": null,
+  "phases": {
+    "1": "completed",
+    "2": "completed",
+    "3": "completed"
+  },
+  "progress": 100,
+  "message": "Pipeline completed",
+  "errors": [],
+  "outputs": {
+    "phase1": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1",
+      "artifacts": {
+        "story": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1\\story.json",
+        "characters": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1\\characters.json",
+        "script": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1\\script.json",
+        "phase2_audio_handoff": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1\\phase2_audio_handoff.json",
+        "phase3_video_handoff": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1\\phase3_video_handoff.json",
+        "summary": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase1\\summary.json"
+      },
+      "story": {
+        "headline": "Street Reckoning",
+        "genre": "Action, Thriller",
+        "themes": [
+          "Redemption",
+          "Freedom"
+        ],
+        "arc": [
+          "intro",
+          "rising_action",
+          "climax",
+          "falling_action",
+          "resolution"
+        ],
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "headline": "Street Reckoning Begins",
+            "setting": "A dark and gritty city street at night.",
+            "tone": "Ominous, foreboding",
+            "arc_position": "intro",
+            "summary": "We meet our protagonist, a skilled but reckless street racer, as he prepares for his next big run.",
+            "estimated_duration_seconds": 10,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_002",
+            "headline": "The Chase is On",
+            "setting": "A crowded city street with police cars and sirens in the background.",
+            "tone": "Fast-paced, intense",
+            "arc_position": "rising_action",
+            "summary": "Our protagonist gets caught by the police and is forced to make a daring escape.",
+            "estimated_duration_seconds": 20,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_003",
+            "headline": "Prison Life",
+            "setting": "A cold and sterile prison cell.",
+            "tone": "Miserable, hopeless",
+            "arc_position": "climax",
+            "summary": "Our protagonist is sentenced to prison for his crimes and must come to terms with his new reality.",
+            "estimated_duration_seconds": 15,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_004",
+            "headline": "A Plan Forms",
+            "setting": "A dimly lit prison cell, where our protagonist begins to formulate a plan for escape.",
+            "tone": "Determined, hopeful",
+            "arc_position": "falling_action",
+            "summary": "Our protagonist starts to gather resources and information to aid in his escape.",
+            "estimated_duration_seconds": 15,
+            "themes": []
+          },
+          {
+            "scene_key": "scene_005",
+            "headline": "Freedom at Last",
+            "setting": "A deserted alleyway, where our protagonist finally escapes the prison.",
+            "tone": "Exhilarated, liberating",
+            "arc_position": "resolution",
+            "summary": "Our protagonist successfully escapes the prison and begins his journey towards redemption.",
+            "estimated_duration_seconds": 10,
+            "themes": []
+          }
+        ],
+        "total_estimated_duration_seconds": 75,
+        "premise": "",
+        "setting_description": ""
+      },
+      "characters": {
+        "characters": [
+          {
+            "character_id": "char_001",
+            "name": "Protagonist",
+            "role": "protagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "determined",
+              "speed": 0.5,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "energetic",
+                "insistent"
+              ]
+            },
+            "appearance": {
+              "physical_description": "Young adult male with short, spiky black hair and piercing blue eyes.",
+              "clothing": "leather jacket, jeans, sneakers",
+              "distinctive_features": "[scar above left eyebrow]",
+              "color_palette": [
+                "black",
+                "blue",
+                "gray"
+              ],
+              "art_style_prompt": "young man with red curly hair, wearing a blue astronaut suit, determined expression"
+            },
+            "personality_traits": [
+              "reckless",
+              "independent"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002",
+              "scene_003",
+              "scene_004",
+              "scene_005"
+            ],
+            "background": "street racer"
+          },
+          {
+            "character_id": "char_002",
+            "name": "Police Officer",
+            "role": "antagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "authoritative",
+              "speed": 0.5,
+              "emotion_baseline": "neutral",
+              "accent": "regional",
+              "tts_style_tags": [
+                "serious",
+                "authoritative"
+              ]
+            },
+            "appearance": {
+              "physical_description": "Middle-aged male with short, gray hair and a stern expression.",
+              "clothing": "police uniform",
+              "distinctive_features": "[badge on chest]",
+              "color_palette": [
+                "gray",
+                "blue",
+                "white"
+              ],
+              "art_style_prompt": "middle-aged man with brown hair, wearing a police uniform, serious expression"
+            },
+            "personality_traits": [
+              "by-the-book",
+              "authoritative"
+            ],
+            "scenes_appearing_in": [
+              "scene_001",
+              "scene_002"
+            ],
+            "background": "police officer"
+          },
+          {
+            "character_id": "char_003",
+            "name": "Prison Guard",
+            "role": "antagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "adult",
+              "tone": "grim",
+              "speed": 0.5,
+              "emotion_baseline": "neutral",
+              "accent": "regional",
+              "tts_style_tags": [
+                "gruff",
+                "authoritative"
+              ]
+            },
+            "appearance": {
+              "physical_description": "Older male with short, buzzed hair and a gruff expression.",
+              "clothing": "prison uniform",
+              "distinctive_features": "[thick beard]",
+              "color_palette": [
+                "gray",
+                "blue",
+                "white"
+              ],
+              "art_style_prompt": "older man with gray hair, wearing a prison uniform, gruff expression"
+            },
+            "personality_traits": [
+              "tough",
+              "unforgiving"
+            ],
+            "scenes_appearing_in": [
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "prison guard"
+          },
+          {
+            "character_id": "char_004",
+            "name": "Prison Inmate",
+            "role": "supporting",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "young_adult",
+              "tone": "desperate",
+              "speed": 0.5,
+              "emotion_baseline": "neutral",
+              "accent": "regional",
+              "tts_style_tags": [
+                "desperate",
+                "optimistic"
+              ]
+            },
+            "appearance": {
+              "physical_description": "Young adult male with short, messy black hair and a scruffy beard.",
+              "clothing": "prison attire",
+              "distinctive_features": "[scruffy beard]",
+              "color_palette": [
+                "black",
+                "gray",
+                "white"
+              ],
+              "art_style_prompt": "young man with brown hair, wearing prison clothes, scruffy beard"
+            },
+            "personality_traits": [
+              "desperate",
+              "hopeful"
+            ],
+            "scenes_appearing_in": [
+              "scene_003",
+              "scene_004"
+            ],
+            "background": "prison inmate"
+          },
+          {
+            "character_id": "char_005",
+            "name": "Free Prisoner",
+            "role": "protagonist",
+            "voice_config": {
+              "gender": "male",
+              "age_range": "young_adult",
+              "tone": "exhilarated",
+              "speed": 0.5,
+              "emotion_baseline": "neutral",
+              "accent": "neutral",
+              "tts_style_tags": [
+                "exuberant",
+                "triumphant"
+              ]
+            },
+            "appearance": {
+              "physical_description": "Young adult male with short, spiky black hair and piercing blue eyes.",
+              "clothing": "leather jacket, jeans, sneakers",
+              "distinctive_features": "[scar above left eyebrow]",
+              "color_palette": [
+                "black",
+                "blue",
+                "gray"
+              ],
+              "art_style_prompt": "young man with red curly hair, wearing a blue astronaut suit, determined expression"
+            },
+            "personality_traits": [
+              "reckless",
+              "independent"
+            ],
+            "scenes_appearing_in": [
+              "scene_005"
+            ],
+            "background": "free prisoner"
+          }
+        ],
+        "global_art_style": "2D flat-design cartoon"
+      },
+      "script": {
+        "scenes": [
+          {
+            "scene_key": "scene_001",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "I've been racing for years, but this feels like my last chance.",
+                "emotion": "determined",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 3.5
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "intense",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 10
+          },
+          {
+            "scene_key": "scene_002",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_001",
+                "copy_text": "The streets are mean, and the cops are always on my tail.",
+                "emotion": "cautious",
+                "timing_offset_seconds": 3.5,
+                "duration_hint_seconds": 4.2
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "I need to get out of here before they catch me.",
+                "emotion": "anxious",
+                "timing_offset_seconds": 8.7,
+                "duration_hint_seconds": 3.5
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "intense",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 20
+          },
+          {
+            "scene_key": "scene_003",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_002",
+                "copy_text": "You're under arrest for reckless endangerment.",
+                "emotion": "authoritative",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 3.5
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "I didn't mean to hurt anyone.",
+                "emotion": "desperate",
+                "timing_offset_seconds": 8.7,
+                "duration_hint_seconds": 4.2
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "sad",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 15
+          },
+          {
+            "scene_key": "scene_004",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_003",
+                "copy_text": "You're going to rot in here for the rest of your life.",
+                "emotion": "grim",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 3.5
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_001",
+                "copy_text": "I won't give up.",
+                "emotion": "hopeful",
+                "timing_offset_seconds": 8.7,
+                "duration_hint_seconds": 4.2
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "sad",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 15
+          },
+          {
+            "scene_key": "scene_005",
+            "dialogue": [
+              {
+                "line_id": "line_001",
+                "character_id": "char_004",
+                "copy_text": "Thank God I made it out alive.",
+                "emotion": "desperate",
+                "timing_offset_seconds": 0.0,
+                "duration_hint_seconds": 3.5
+              },
+              {
+                "line_id": "line_002",
+                "character_id": "char_005",
+                "copy_text": "We did it! We're finally free!",
+                "emotion": "exuberant",
+                "timing_offset_seconds": 8.7,
+                "duration_hint_seconds": 4.2
+              }
+            ],
+            "visual_prompt": "build_visual_prompt",
+            "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+            "camera_movement": "pan_left",
+            "transition_in": "fade_in",
+            "transition_out": "fade_out",
+            "background_music_mood": "exciting",
+            "subtitle_text": "",
+            "estimated_duration_seconds": 10
+          }
+        ]
+      }
+    },
+    "phase2": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase2",
+      "timing_manifest": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase2\\timing_manifest.json",
+      "full_audio": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase2\\full_audio.wav",
+      "summary": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase2\\summary.json",
+      "scene_count": 5,
+      "segment_count": 9
+    },
+    "phase3": {
+      "output_dir": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3",
+      "final_video": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\final_output.mp4",
+      "subtitles": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\subtitles.srt",
+      "summary": "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\summary.json",
+      "scene_clips": [
+        "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\scenes\\scene_001_final.mp4",
+        "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\scenes\\scene_002_final.mp4",
+        "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\scenes\\scene_003_final.mp4",
+        "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\scenes\\scene_004_final.mp4",
+        "D:\\Agentic Project\\data\\jobs\\cb7cdfe7f33c4d339dfdad0f1aeba5a6\\phase3\\scenes\\scene_005_final.mp4"
+      ]
+    }
+  },
+  "created_at": "2026-05-09T09:51:58Z",
+  "updated_at": "2026-05-09T10:52:26Z"
+}

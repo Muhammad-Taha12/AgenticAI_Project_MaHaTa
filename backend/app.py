@@ -9,7 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from fastapi.staticfiles import StaticFiles
 
-from backend.models import JobResponse, PipelineRequest, RunPhaseRequest
+from backend.models import EditHistoryResponse, EditRequest, EditResponse, JobResponse, PipelineRequest, RunPhaseRequest, UndoResponse
 from backend.runtime.ledger import JOBS_ROOT, PROJECT_ROOT, RunLedger
 from backend.runtime.orchestrator import FlowRunner, read_json_blob
 from backend.stream.events import emit_job_updates
@@ -126,3 +126,87 @@ async def get_result(task_id: str) -> dict[str, Any]:
 async def watch_events(task_id: str) -> StreamingResponse:
     _load_snapshot(task_id)
     return StreamingResponse(emit_job_updates(task_id, store), media_type="text/event-stream")
+
+
+# ── Edit Agent routes ─────────────────────────────────────────────────────────
+
+@app.post("/edit/{task_id}", response_model=EditResponse)
+async def edit_job(task_id: str, request_body: EditRequest) -> EditResponse:
+    """Apply a natural-language edit instruction to a completed job."""
+    from agents.edit_agent.agent import apply_edit, can_undo as _can_undo
+    from backend.runtime.orchestrator import read_json_blob
+
+    snapshot = _load_snapshot(task_id)
+    if snapshot["status"] == "running":
+        raise HTTPException(status_code=409, detail="Cannot edit while job is running")
+
+    phase1_outputs = snapshot.get("outputs", {}).get("phase1", {})
+    phase1_dir_str = phase1_outputs.get("output_dir")
+    if not phase1_dir_str:
+        raise HTTPException(status_code=422, detail="Phase 1 outputs not available for this job")
+
+    from pathlib import Path
+    job_dir = store.job_dir(task_id)
+    phase1_dir = Path(phase1_dir_str)
+
+    artifacts = phase1_outputs.get("artifacts", {})
+    story = read_json_blob(artifacts.get("story")) or phase1_outputs.get("story")
+    characters = read_json_blob(artifacts.get("characters")) or phase1_outputs.get("characters")
+    script = read_json_blob(artifacts.get("script")) or phase1_outputs.get("script")
+
+    result = await asyncio.to_thread(
+        apply_edit, job_dir, phase1_dir, request_body.instruction, story, characters, script
+    )
+
+    if result.success:
+        # Rewind the ledger and kick off re-run from the appropriate phase
+        rewound = _rewind_snapshot(snapshot, result.rerun_from_phase, brief=None)
+        store.save(task_id, rewound)
+        asyncio.create_task(runner.run_pipeline(task_id, starting_stage=result.rerun_from_phase))
+
+    return EditResponse(
+        job_id=task_id,
+        **result.to_dict(),
+        can_undo=_can_undo(job_dir),
+    )
+
+
+@app.post("/undo/{task_id}", response_model=UndoResponse)
+async def undo_job_edit(task_id: str) -> UndoResponse:
+    """Undo the last edit, restoring the previous phase 1 artifacts and re-running."""
+    from agents.edit_agent.agent import undo_edit
+
+    snapshot = _load_snapshot(task_id)
+    if snapshot["status"] == "running":
+        raise HTTPException(status_code=409, detail="Cannot undo while job is running")
+
+    from pathlib import Path
+    job_dir = store.job_dir(task_id)
+    phase1_dir_str = snapshot.get("outputs", {}).get("phase1", {}).get("output_dir")
+    if not phase1_dir_str:
+        raise HTTPException(status_code=422, detail="No phase 1 outputs available")
+
+    phase1_dir = Path(phase1_dir_str)
+    result = await asyncio.to_thread(undo_edit, job_dir, phase1_dir)
+
+    if result.success:
+        rewound = _rewind_snapshot(snapshot, 2, brief=None)  # always re-run from phase 2 after undo
+        store.save(task_id, rewound)
+        asyncio.create_task(runner.run_pipeline(task_id, starting_stage=2))
+
+    return UndoResponse(job_id=task_id, **result.to_dict())
+
+
+@app.get("/edit-history/{task_id}", response_model=EditHistoryResponse)
+async def get_edit_history(task_id: str) -> EditHistoryResponse:
+    """Return the edit history for a job."""
+    from agents.edit_agent.agent import get_history, can_undo as _can_undo
+
+    _load_snapshot(task_id)
+    job_dir = store.job_dir(task_id)
+    history = get_history(job_dir)
+    return EditHistoryResponse(
+        job_id=task_id,
+        history=history,
+        can_undo=_can_undo(job_dir),
+    )

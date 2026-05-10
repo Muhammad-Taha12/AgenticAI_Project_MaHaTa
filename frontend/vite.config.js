@@ -16,6 +16,9 @@ export default defineConfig({
       "/run-phase": backendTarget,
       "/run-pipeline": backendTarget,
       "/status": backendTarget,
+      "/edit": backendTarget,
+      "/undo": backendTarget,
+      "/edit-history": backendTarget,
     },
   },
 });

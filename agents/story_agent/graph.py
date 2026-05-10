@@ -1,3 +1,4 @@
+"""Reworked module for narrative.storycraft.graph.py"""
 from __future__ import annotations
 from shared.schemas.pipeline_state import Phase1State
 from langgraph.graph import END, StateGraph

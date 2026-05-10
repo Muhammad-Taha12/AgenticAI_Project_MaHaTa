@@ -33,3 +33,25 @@ export async function fetchJobResult(jobId) {
   const response = await fetch(`/result/${jobId}`);
   return parseResponse(response);
 }
+
+export async function applyEdit(jobId, instruction) {
+  const response = await fetch(`/edit/${jobId}`, {
+    method: "POST",
+    headers: JSON_HEADERS,
+    body: JSON.stringify({ instruction }),
+  });
+  return parseResponse(response);
+}
+
+export async function undoEdit(jobId) {
+  const response = await fetch(`/undo/${jobId}`, {
+    method: "POST",
+    headers: JSON_HEADERS,
+  });
+  return parseResponse(response);
+}
+
+export async function fetchEditHistory(jobId) {
+  const response = await fetch(`/edit-history/${jobId}`);
+  return parseResponse(response);
+}

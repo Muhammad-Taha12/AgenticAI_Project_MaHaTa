@@ -1,0 +1,71 @@
+{
+  "headline": "Pirate Battle at Sea",
+  "genre": "Action/Adventure",
+  "themes": [
+    "Power",
+    "Loyalty",
+    "Betrayal"
+  ],
+  "arc": [
+    "intro",
+    "rising_action",
+    "climax",
+    "falling_action",
+    "resolution"
+  ],
+  "scenes": [
+    {
+      "scene_key": "scene_001",
+      "headline": "The Ocean Awaits",
+      "setting": "Open ocean, sunny day",
+      "tone": "Peaceful",
+      "arc_position": "intro",
+      "summary": "Captain Blackbeak stands at the helm of his ship, gazing out at the endless blue horizon.",
+      "estimated_duration_seconds": 10,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_002",
+      "headline": "The Enemy Approaches",
+      "setting": "Open ocean, sunny day",
+      "tone": "Tense",
+      "arc_position": "rising_action",
+      "summary": "Captain Redbeard's ship comes into view, its black sails billowing in the wind.",
+      "estimated_duration_seconds": 15,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_003",
+      "headline": "The Battle Rages On",
+      "setting": "Open ocean, stormy weather",
+      "tone": "Intense",
+      "arc_position": "rising_action",
+      "summary": "Pirates clash swords and cannons blaze as the two ships engage in a fierce battle.",
+      "estimated_duration_seconds": 20,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_004",
+      "headline": "The Turning Point",
+      "setting": "Open ocean, stormy weather",
+      "tone": "Dramatic",
+      "arc_position": "climax",
+      "summary": "Captain Blackbeak faces off against Captain Redbeard in a one-on-one duel.",
+      "estimated_duration_seconds": 15,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_005",
+      "headline": "Victory and Betrayal",
+      "setting": "Open ocean, stormy weather",
+      "tone": "Emotional",
+      "arc_position": "falling_action",
+      "summary": "Captain Blackbeak emerges victorious, but at a great cost: his trusted first mate has betrayed him.",
+      "estimated_duration_seconds": 10,
+      "themes": []
+    }
+  ],
+  "total_estimated_duration_seconds": 70,
+  "premise": "",
+  "setting_description": ""
+}

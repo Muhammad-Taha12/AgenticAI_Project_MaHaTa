@@ -1,3 +1,4 @@
+"""Reworked module for toolkit.vision.image_generation.py"""
 from pathlib import Path
 from mcp.base_tool import ToolKernel
 from typing import Any, Dict, List, Optional

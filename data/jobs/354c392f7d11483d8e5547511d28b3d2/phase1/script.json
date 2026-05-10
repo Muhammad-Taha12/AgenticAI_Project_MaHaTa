@@ -1,0 +1,269 @@
+{
+  "scenes": [
+    {
+      "scene_key": "scene_001",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Captain Blackbeak stands tall, his piercing blue eyes fixed on the horizon.",
+          "emotion": "positive",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "The ocean stretches out before me, a vast expanse of blue and green.",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_002",
+          "copy_text": "Ah, Captain Blackbeak! Ready to set sail?",
+          "emotion": "positive",
+          "timing_offset_seconds": 10.0,
+          "duration_hint_seconds": 5.0
+        },
+        {
+          "line_id": "line_004",
+          "character_id": "char_001",
+          "copy_text": "Aye, Barnaby! Let's hoist the sails and catch the wind!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_005",
+          "character_id": "char_002",
+          "copy_text": "Aye aye, Captain!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 5.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, sunny day', scene_tone='Peaceful', characters_present=['char_001', 'char_002'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_002': 'tall, slender pirate with messy blond hair'}, art_style='3D Pixar-style CGI')",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "calm",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 70
+    },
+    {
+      "scene_key": "scene_002",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_003",
+          "copy_text": "Captain Redbeard sneers at Captain Blackbeak, his wild red hair a testament to his fury.",
+          "emotion": "negative",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_001",
+          "copy_text": "You'll never take me alive, Redbeard!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_003",
+          "copy_text": "We'll see about that, Blackbeak!",
+          "emotion": "negative",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_004",
+          "character_id": "char_001",
+          "copy_text": "Prepare to meet your maker, Redbeard!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_005",
+          "character_id": "char_003",
+          "copy_text": "You'll never defeat me!",
+          "emotion": "negative",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, sunny day', scene_tone='Tense', characters_present=['char_003'], character_descriptions={'char_003': 'towering pirate with thick beard and wild red hair'}, art_style='3D Pixar-style CGI')",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "intense",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 70
+    },
+    {
+      "scene_key": "scene_003",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "The battle rages on, cannons blazing as the two ships clash in a frenzy of steel and fire.",
+          "emotion": "positive",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_003",
+          "copy_text": "You'll never win, Blackbeak!",
+          "emotion": "negative",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "We'll see about that, Redbeard!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_004",
+          "character_id": "char_003",
+          "copy_text": "Prepare to meet your maker, Blackbeak!",
+          "emotion": "negative",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_005",
+          "character_id": "char_001",
+          "copy_text": "I'll never yield!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, stormy weather', scene_tone='Intense', characters_present=['char_001', 'char_003'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_003': 'towering pirate with thick beard and wild red hair'}, art_style='3D Pixar-style CGI')",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "intense",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 70
+    },
+    {
+      "scene_key": "scene_004",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Captain Blackbeak faces off against Captain Redbeard, their swords locked in a fierce duel.",
+          "emotion": "positive",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_003",
+          "copy_text": "You'll never defeat me, Blackbeak!",
+          "emotion": "negative",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "I'll never yield!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_004",
+          "character_id": "char_003",
+          "copy_text": "Prepare to meet your maker, Blackbeak!",
+          "emotion": "negative",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_005",
+          "character_id": "char_001",
+          "copy_text": "I'll never back down!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, stormy weather', scene_tone='Dramatic', characters_present=['char_001', 'char_004'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_004': 'young, fiery pirate with short pink hair'}, art_style='3D Pixar-style CGI')",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "dramatic",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 70
+    },
+    {
+      "scene_key": "scene_005",
+      "dialogue": [
+        {
+          "line_id": "line_001",
+          "character_id": "char_001",
+          "copy_text": "Captain Blackbeak emerges victorious, but at a great cost: his trusted first mate has betrayed him.",
+          "emotion": "positive",
+          "timing_offset_seconds": 0.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_002",
+          "character_id": "char_005",
+          "copy_text": "I'm so sorry, Captain Blackbeak!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_003",
+          "character_id": "char_001",
+          "copy_text": "It's not your fault, Barnaby!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_004",
+          "character_id": "char_005",
+          "copy_text": "I'll always stand by you, Captain!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        },
+        {
+          "line_id": "line_005",
+          "character_id": "char_001",
+          "copy_text": "Thank you, Barnaby!",
+          "emotion": "positive",
+          "timing_offset_seconds": 5.0,
+          "duration_hint_seconds": 10.0
+        }
+      ],
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, stormy weather', scene_tone='Emotional', characters_present=['char_001', 'char_005'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_005': 'young pirate with messy brown hair'}, art_style='3D Pixar-style CGI')",
+      "negative_visual_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "background_music_mood": "emotional",
+      "subtitle_text": "",
+      "estimated_duration_seconds": 70
+    }
+  ]
+}

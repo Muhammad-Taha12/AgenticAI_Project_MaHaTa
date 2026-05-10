@@ -1,0 +1,195 @@
+{
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "Captain Blackbeak",
+      "role": "protagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Young pirate captain with a strong jawline, piercing blue eyes, and jet-black hair tied in a ponytail.",
+        "clothing": "tattered black leather coat, white shirt with billowy sleeves",
+        "distinctive_features": "gold trim on the coat",
+        "color_palette": [
+          "black",
+          "white",
+          "gold"
+        ],
+        "art_style_prompt": "young pirate captain with strong jawline and piercing blue eyes"
+      },
+      "personality_traits": [
+        "charismatic leader",
+        "fiercely loyal"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "pirate captain"
+    },
+    {
+      "character_id": "char_002",
+      "name": "First Mate Barnaby",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "friendly",
+        "speed": 1.2,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "lively",
+          "humorous"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Tall, slender pirate with a messy blond haircut and bright green eyes.",
+        "clothing": "crisp white shirt with gold buttons",
+        "distinctive_features": "bushy beard",
+        "color_palette": [
+          "white",
+          "gold",
+          "brown"
+        ],
+        "art_style_prompt": "tall, slender pirate with messy blond hair"
+      },
+      "personality_traits": [
+        "loyal and trusted sidekick",
+        "comic relief"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "first mate"
+    },
+    {
+      "character_id": "char_003",
+      "name": "Captain Redbeard",
+      "role": "antagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Towering pirate with a thick beard and wild red hair.",
+        "clothing": "tattered black cloak",
+        "distinctive_features": "massive sword",
+        "color_palette": [
+          "black",
+          "red"
+        ],
+        "art_style_prompt": "towering pirate with thick beard and wild red hair"
+      },
+      "personality_traits": [
+        "ruthless pirate captain",
+        "power-hungry"
+      ],
+      "scenes_appearing_in": [
+        "scene_002",
+        "scene_003",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "pirate captain"
+    },
+    {
+      "character_id": "char_004",
+      "name": "First Mate Scarlett",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "female",
+        "age_range": "young_adult",
+        "tone": "sassy",
+        "speed": 1.5,
+        "emotion_baseline": "positive",
+        "accent": "American (USA)",
+        "tts_style_tags": [
+          "spunky",
+          "rebellious"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Young, fiery pirate with short pink hair and piercing red eyes.",
+        "clothing": "fitted leather jacket",
+        "distinctive_features": "curved daggers",
+        "color_palette": [
+          "black",
+          "pink",
+          "red"
+        ],
+        "art_style_prompt": "young, fiery pirate with short pink hair"
+      },
+      "personality_traits": [
+        "loyal and determined",
+        "independent"
+      ],
+      "scenes_appearing_in": [
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "first mate"
+    },
+    {
+      "character_id": "char_005",
+      "name": "Tom",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "innocent",
+        "speed": 1.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "young",
+          "optimistic"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Young pirate with messy brown hair and bright blue eyes.",
+        "clothing": "simple white shirt",
+        "distinctive_features": "small sword",
+        "color_palette": [
+          "white",
+          "brown"
+        ],
+        "art_style_prompt": "young pirate with messy brown hair"
+      },
+      "personality_traits": [
+        "naive and trusting",
+        "curious"
+      ],
+      "scenes_appearing_in": [
+        "scene_005"
+      ],
+      "background": "young brother of First Mate Barnaby"
+    }
+  ],
+  "global_art_style": "3D Pixar-style CGI"
+}

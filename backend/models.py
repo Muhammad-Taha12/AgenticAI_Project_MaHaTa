@@ -26,3 +26,35 @@ class JobState(BaseModel):
 class JobResponse(BaseModel):
     job_id: str
     status: JobStatus
+
+
+class EditRequest(BaseModel):
+    instruction: str = Field(min_length=3, description="Natural-language edit instruction")
+
+class EditResponse(BaseModel):
+    job_id: str
+    success: bool
+    rerun_from_phase: int
+    patches_applied: int
+    files_modified: list[str]
+    rationale: str
+    snapshot_version: str
+    error: Optional[str] = None
+    can_undo: bool = False
+
+class UndoResponse(BaseModel):
+    job_id: str
+    success: bool
+    restored_version: Optional[str] = None
+    error: Optional[str] = None
+
+class EditHistoryEntry(BaseModel):
+    version: str
+    instruction: str
+    intent_summary: str
+    timestamp: str
+
+class EditHistoryResponse(BaseModel):
+    job_id: str
+    history: list[EditHistoryEntry]
+    can_undo: bool

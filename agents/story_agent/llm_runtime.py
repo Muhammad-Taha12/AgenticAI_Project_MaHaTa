@@ -1,4 +1,4 @@
-"""LLM runtime — local Ollama backend"""
+"""LLM runtime — local Ollama backend (replaces Google Gemini API)."""
 from __future__ import annotations
 
 from langchain_core.messages import AIMessage, ToolMessage

@@ -1,0 +1,84 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, sunny day', scene_tone='Peaceful', characters_present=['char_001', 'char_002'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_002': 'tall, slender pirate with messy blond hair'}, art_style='3D Pixar-style CGI')",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 70,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, sunny day', scene_tone='Tense', characters_present=['char_003'], character_descriptions={'char_003': 'towering pirate with thick beard and wild red hair'}, art_style='3D Pixar-style CGI')",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 70,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, stormy weather', scene_tone='Intense', characters_present=['char_001', 'char_003'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_003': 'towering pirate with thick beard and wild red hair'}, art_style='3D Pixar-style CGI')",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 70,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003"
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, stormy weather', scene_tone='Dramatic', characters_present=['char_001', 'char_004'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_004': 'young, fiery pirate with short pink hair'}, art_style='3D Pixar-style CGI')",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 70,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003",
+        "char_004"
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "visual_prompt": "build_visual_prompt(scene_setting='Open ocean, stormy weather', scene_tone='Emotional', characters_present=['char_001', 'char_005'], character_descriptions={'char_001': 'young pirate captain with strong jawline and piercing blue eyes', 'char_005': 'young pirate with messy brown hair'}, art_style='3D Pixar-style CGI')",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "ken_burns",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 70,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002",
+        "char_003",
+        "char_004",
+        "char_005"
+      ]
+    }
+  ],
+  "character_appearance_prompts": {
+    "char_001": "young pirate captain with strong jawline and piercing blue eyes",
+    "char_002": "tall, slender pirate with messy blond hair",
+    "char_003": "towering pirate with thick beard and wild red hair",
+    "char_004": "young, fiery pirate with short pink hair",
+    "char_005": "young pirate with messy brown hair"
+  },
+  "global_art_style": "3D Pixar-style CGI"
+}

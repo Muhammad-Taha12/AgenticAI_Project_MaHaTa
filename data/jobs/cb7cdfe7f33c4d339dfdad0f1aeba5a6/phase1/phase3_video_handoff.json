@@ -1,0 +1,79 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_001",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 10,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002"
+      ]
+    },
+    {
+      "scene_id": "scene_002",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 20,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_002"
+      ]
+    },
+    {
+      "scene_id": "scene_003",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 15,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_003",
+        "char_004"
+      ]
+    },
+    {
+      "scene_id": "scene_004",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 15,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_003",
+        "char_004"
+      ]
+    },
+    {
+      "scene_id": "scene_005",
+      "visual_prompt": "build_visual_prompt",
+      "negative_prompt": "blurry, low quality, distorted faces, watermark, text overlay, extra limbs",
+      "camera_movement": "pan_left",
+      "transition_in": "fade_in",
+      "transition_out": "fade_out",
+      "duration_seconds": 10,
+      "character_ids_in_scene": [
+        "char_001",
+        "char_005"
+      ]
+    }
+  ],
+  "character_appearance_prompts": {
+    "char_001": "young man with red curly hair, wearing a blue astronaut suit, determined expression",
+    "char_002": "middle-aged man with brown hair, wearing a police uniform, serious expression",
+    "char_003": "older man with gray hair, wearing a prison uniform, gruff expression",
+    "char_004": "young man with brown hair, wearing prison clothes, scruffy beard",
+    "char_005": "young man with red curly hair, wearing a blue astronaut suit, determined expression"
+  },
+  "global_art_style": "2D flat-design cartoon"
+}

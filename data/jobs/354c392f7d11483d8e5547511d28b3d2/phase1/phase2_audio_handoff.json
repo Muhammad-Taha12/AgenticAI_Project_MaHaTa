@@ -1,0 +1,624 @@
+{
+  "voice_configs": {
+    "char_001": {
+      "gender": "male",
+      "age_range": "young_adult",
+      "tone": "confident",
+      "speed": 0.8,
+      "emotion_baseline": "positive",
+      "accent": "British (UK)",
+      "tts_style_tags": [
+        "strong",
+        "heroic"
+      ]
+    },
+    "char_002": {
+      "gender": "male",
+      "age_range": "young_adult",
+      "tone": "friendly",
+      "speed": 1.2,
+      "emotion_baseline": "positive",
+      "accent": "British (UK)",
+      "tts_style_tags": [
+        "lively",
+        "humorous"
+      ]
+    },
+    "char_003": {
+      "gender": "male",
+      "age_range": "adult",
+      "tone": "aggressive",
+      "speed": 0.6,
+      "emotion_baseline": "negative",
+      "accent": "Scottish (Scotland)",
+      "tts_style_tags": [
+        "intimidating",
+        "ruthless"
+      ]
+    },
+    "char_004": {
+      "gender": "female",
+      "age_range": "young_adult",
+      "tone": "sassy",
+      "speed": 1.5,
+      "emotion_baseline": "positive",
+      "accent": "American (USA)",
+      "tts_style_tags": [
+        "spunky",
+        "rebellious"
+      ]
+    },
+    "char_005": {
+      "gender": "male",
+      "age_range": "young_adult",
+      "tone": "innocent",
+      "speed": 1.8,
+      "emotion_baseline": "positive",
+      "accent": "British (UK)",
+      "tts_style_tags": [
+        "young",
+        "optimistic"
+      ]
+    }
+  },
+  "audio_segments": [
+    {
+      "segment_id": "scene_001_line_001",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Captain Blackbeak stands tall, his piercing blue eyes fixed on the horizon.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_001_line_002",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "The ocean stretches out before me, a vast expanse of blue and green.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_001_line_003",
+      "scene_id": "scene_001",
+      "character_id": "char_002",
+      "line_id": "line_003",
+      "text": "Ah, Captain Blackbeak! Ready to set sail?",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "friendly",
+        "speed": 1.2,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "lively",
+          "humorous"
+        ]
+      },
+      "timing_offset_seconds": 10.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_001_line_004",
+      "scene_id": "scene_001",
+      "character_id": "char_001",
+      "line_id": "line_004",
+      "text": "Aye, Barnaby! Let's hoist the sails and catch the wind!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_001_line_005",
+      "scene_id": "scene_001",
+      "character_id": "char_002",
+      "line_id": "line_005",
+      "text": "Aye aye, Captain!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "friendly",
+        "speed": 1.2,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "lively",
+          "humorous"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 5.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_002_line_001",
+      "scene_id": "scene_002",
+      "character_id": "char_003",
+      "line_id": "line_001",
+      "text": "Captain Redbeard sneers at Captain Blackbeak, his wild red hair a testament to his fury.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_002_line_002",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_002",
+      "text": "You'll never take me alive, Redbeard!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_002_line_003",
+      "scene_id": "scene_002",
+      "character_id": "char_003",
+      "line_id": "line_003",
+      "text": "We'll see about that, Blackbeak!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_002_line_004",
+      "scene_id": "scene_002",
+      "character_id": "char_001",
+      "line_id": "line_004",
+      "text": "Prepare to meet your maker, Redbeard!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_002_line_005",
+      "scene_id": "scene_002",
+      "character_id": "char_003",
+      "line_id": "line_005",
+      "text": "You'll never defeat me!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_003_line_001",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "The battle rages on, cannons blazing as the two ships clash in a frenzy of steel and fire.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_003_line_002",
+      "scene_id": "scene_003",
+      "character_id": "char_003",
+      "line_id": "line_002",
+      "text": "You'll never win, Blackbeak!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_003_line_003",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "We'll see about that, Redbeard!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_003_line_004",
+      "scene_id": "scene_003",
+      "character_id": "char_003",
+      "line_id": "line_004",
+      "text": "Prepare to meet your maker, Blackbeak!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_003_line_005",
+      "scene_id": "scene_003",
+      "character_id": "char_001",
+      "line_id": "line_005",
+      "text": "I'll never yield!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_004_line_001",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Captain Blackbeak faces off against Captain Redbeard, their swords locked in a fierce duel.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_004_line_002",
+      "scene_id": "scene_004",
+      "character_id": "char_003",
+      "line_id": "line_002",
+      "text": "You'll never defeat me, Blackbeak!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_004_line_003",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "I'll never yield!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_004_line_004",
+      "scene_id": "scene_004",
+      "character_id": "char_003",
+      "line_id": "line_004",
+      "text": "Prepare to meet your maker, Blackbeak!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "aggressive",
+        "speed": 0.6,
+        "emotion_baseline": "negative",
+        "accent": "Scottish (Scotland)",
+        "tts_style_tags": [
+          "intimidating",
+          "ruthless"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "negative"
+    },
+    {
+      "segment_id": "scene_004_line_005",
+      "scene_id": "scene_004",
+      "character_id": "char_001",
+      "line_id": "line_005",
+      "text": "I'll never back down!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_005_line_001",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_001",
+      "text": "Captain Blackbeak emerges victorious, but at a great cost: his trusted first mate has betrayed him.",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 0.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_005_line_002",
+      "scene_id": "scene_005",
+      "character_id": "char_005",
+      "line_id": "line_002",
+      "text": "I'm so sorry, Captain Blackbeak!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "innocent",
+        "speed": 1.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "young",
+          "optimistic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_005_line_003",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_003",
+      "text": "It's not your fault, Barnaby!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_005_line_004",
+      "scene_id": "scene_005",
+      "character_id": "char_005",
+      "line_id": "line_004",
+      "text": "I'll always stand by you, Captain!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "innocent",
+        "speed": 1.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "young",
+          "optimistic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    },
+    {
+      "segment_id": "scene_005_line_005",
+      "scene_id": "scene_005",
+      "character_id": "char_001",
+      "line_id": "line_005",
+      "text": "Thank you, Barnaby!",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "confident",
+        "speed": 0.8,
+        "emotion_baseline": "positive",
+        "accent": "British (UK)",
+        "tts_style_tags": [
+          "strong",
+          "heroic"
+        ]
+      },
+      "timing_offset_seconds": 5.0,
+      "duration_hint_seconds": 10.0,
+      "emotion": "positive"
+    }
+  ],
+  "music_moods": {
+    "scene_001": "calm",
+    "scene_002": "intense",
+    "scene_003": "intense",
+    "scene_004": "dramatic",
+    "scene_005": "emotional"
+  },
+  "total_segments": 25
+}

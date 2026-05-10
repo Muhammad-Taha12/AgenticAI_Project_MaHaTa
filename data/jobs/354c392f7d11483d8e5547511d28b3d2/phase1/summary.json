@@ -1,0 +1,57 @@
+{
+  "run_status": "success",
+  "timestamp": "2026-05-09T16:55:45.521598",
+  "errors": [],
+  "tools_log": [
+    {
+      "node": "character_agent",
+      "tool": "check_cast_consistency",
+      "args": {
+        "character_ids": [
+          "char_001",
+          "char_002",
+          "char_003",
+          "char_004",
+          "char_005"
+        ],
+        "scene_character_map": {
+          "scene_001": [
+            "char_001",
+            "char_002"
+          ],
+          "scene_002": [
+            "char_001",
+            "char_003"
+          ],
+          "scene_003": [
+            "char_001",
+            "char_002",
+            "char_003"
+          ],
+          "scene_004": [
+            "char_001",
+            "char_004"
+          ],
+          "scene_005": [
+            "char_001",
+            "char_004"
+          ]
+        }
+      }
+    }
+  ],
+  "artifact_paths": {
+    "story": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase1\\story.json",
+    "characters": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase1\\characters.json",
+    "script": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase1\\script.json",
+    "phase2_audio_handoff": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase1\\phase2_audio_handoff.json",
+    "phase3_video_handoff": "D:\\Agentic Project\\data\\jobs\\354c392f7d11483d8e5547511d28b3d2\\phase1\\phase3_video_handoff.json"
+  },
+  "stats": {
+    "scene_count": 5,
+    "character_count": 5,
+    "total_dialogue_lines": 25,
+    "estimated_total_seconds": 70,
+    "total_audio_segments": 25
+  }
+}

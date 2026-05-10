@@ -1,0 +1,192 @@
+{
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "Protagonist",
+      "role": "protagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "determined",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "neutral",
+        "tts_style_tags": [
+          "energetic",
+          "insistent"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Young adult male with short, spiky black hair and piercing blue eyes.",
+        "clothing": "leather jacket, jeans, sneakers",
+        "distinctive_features": "[scar above left eyebrow]",
+        "color_palette": [
+          "black",
+          "blue",
+          "gray"
+        ],
+        "art_style_prompt": "young man with red curly hair, wearing a blue astronaut suit, determined expression"
+      },
+      "personality_traits": [
+        "reckless",
+        "independent"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002",
+        "scene_003",
+        "scene_004",
+        "scene_005"
+      ],
+      "background": "street racer"
+    },
+    {
+      "character_id": "char_002",
+      "name": "Police Officer",
+      "role": "antagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "authoritative",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "regional",
+        "tts_style_tags": [
+          "serious",
+          "authoritative"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Middle-aged male with short, gray hair and a stern expression.",
+        "clothing": "police uniform",
+        "distinctive_features": "[badge on chest]",
+        "color_palette": [
+          "gray",
+          "blue",
+          "white"
+        ],
+        "art_style_prompt": "middle-aged man with brown hair, wearing a police uniform, serious expression"
+      },
+      "personality_traits": [
+        "by-the-book",
+        "authoritative"
+      ],
+      "scenes_appearing_in": [
+        "scene_001",
+        "scene_002"
+      ],
+      "background": "police officer"
+    },
+    {
+      "character_id": "char_003",
+      "name": "Prison Guard",
+      "role": "antagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "adult",
+        "tone": "grim",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "regional",
+        "tts_style_tags": [
+          "gruff",
+          "authoritative"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Older male with short, buzzed hair and a gruff expression.",
+        "clothing": "prison uniform",
+        "distinctive_features": "[thick beard]",
+        "color_palette": [
+          "gray",
+          "blue",
+          "white"
+        ],
+        "art_style_prompt": "older man with gray hair, wearing a prison uniform, gruff expression"
+      },
+      "personality_traits": [
+        "tough",
+        "unforgiving"
+      ],
+      "scenes_appearing_in": [
+        "scene_003",
+        "scene_004"
+      ],
+      "background": "prison guard"
+    },
+    {
+      "character_id": "char_004",
+      "name": "Prison Inmate",
+      "role": "supporting",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "desperate",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "regional",
+        "tts_style_tags": [
+          "desperate",
+          "optimistic"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Young adult male with short, messy black hair and a scruffy beard.",
+        "clothing": "prison attire",
+        "distinctive_features": "[scruffy beard]",
+        "color_palette": [
+          "black",
+          "gray",
+          "white"
+        ],
+        "art_style_prompt": "young man with brown hair, wearing prison clothes, scruffy beard"
+      },
+      "personality_traits": [
+        "desperate",
+        "hopeful"
+      ],
+      "scenes_appearing_in": [
+        "scene_003",
+        "scene_004"
+      ],
+      "background": "prison inmate"
+    },
+    {
+      "character_id": "char_005",
+      "name": "Free Prisoner",
+      "role": "protagonist",
+      "voice_config": {
+        "gender": "male",
+        "age_range": "young_adult",
+        "tone": "exhilarated",
+        "speed": 0.5,
+        "emotion_baseline": "neutral",
+        "accent": "neutral",
+        "tts_style_tags": [
+          "exuberant",
+          "triumphant"
+        ]
+      },
+      "appearance": {
+        "physical_description": "Young adult male with short, spiky black hair and piercing blue eyes.",
+        "clothing": "leather jacket, jeans, sneakers",
+        "distinctive_features": "[scar above left eyebrow]",
+        "color_palette": [
+          "black",
+          "blue",
+          "gray"
+        ],
+        "art_style_prompt": "young man with red curly hair, wearing a blue astronaut suit, determined expression"
+      },
+      "personality_traits": [
+        "reckless",
+        "independent"
+      ],
+      "scenes_appearing_in": [
+        "scene_005"
+      ],
+      "background": "free prisoner"
+    }
+  ],
+  "global_art_style": "2D flat-design cartoon"
+}

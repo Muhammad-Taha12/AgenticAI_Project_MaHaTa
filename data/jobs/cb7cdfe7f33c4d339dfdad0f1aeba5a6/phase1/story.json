@@ -1,0 +1,70 @@
+{
+  "headline": "Street Reckoning",
+  "genre": "Action, Thriller",
+  "themes": [
+    "Redemption",
+    "Freedom"
+  ],
+  "arc": [
+    "intro",
+    "rising_action",
+    "climax",
+    "falling_action",
+    "resolution"
+  ],
+  "scenes": [
+    {
+      "scene_key": "scene_001",
+      "headline": "Street Reckoning Begins",
+      "setting": "A dark and gritty city street at night.",
+      "tone": "Ominous, foreboding",
+      "arc_position": "intro",
+      "summary": "We meet our protagonist, a skilled but reckless street racer, as he prepares for his next big run.",
+      "estimated_duration_seconds": 10,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_002",
+      "headline": "The Chase is On",
+      "setting": "A crowded city street with police cars and sirens in the background.",
+      "tone": "Fast-paced, intense",
+      "arc_position": "rising_action",
+      "summary": "Our protagonist gets caught by the police and is forced to make a daring escape.",
+      "estimated_duration_seconds": 20,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_003",
+      "headline": "Prison Life",
+      "setting": "A cold and sterile prison cell.",
+      "tone": "Miserable, hopeless",
+      "arc_position": "climax",
+      "summary": "Our protagonist is sentenced to prison for his crimes and must come to terms with his new reality.",
+      "estimated_duration_seconds": 15,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_004",
+      "headline": "A Plan Forms",
+      "setting": "A dimly lit prison cell, where our protagonist begins to formulate a plan for escape.",
+      "tone": "Determined, hopeful",
+      "arc_position": "falling_action",
+      "summary": "Our protagonist starts to gather resources and information to aid in his escape.",
+      "estimated_duration_seconds": 15,
+      "themes": []
+    },
+    {
+      "scene_key": "scene_005",
+      "headline": "Freedom at Last",
+      "setting": "A deserted alleyway, where our protagonist finally escapes the prison.",
+      "tone": "Exhilarated, liberating",
+      "arc_position": "resolution",
+      "summary": "Our protagonist successfully escapes the prison and begins his journey towards redemption.",
+      "estimated_duration_seconds": 10,
+      "themes": []
+    }
+  ],
+  "total_estimated_duration_seconds": 75,
+  "premise": "",
+  "setting_description": ""
+}
